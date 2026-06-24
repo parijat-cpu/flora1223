@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
- <title>Flora Landscape Developers</title>
+<title>Flora Landscape Developers</title>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+<link href="css/style.css?v=2" rel="stylesheet">
 
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
@@ -17,7 +17,6 @@
 <body>
   <div class="page-wrapper">
 
-    <!-- Preloader Start -->
       <div class="preloader"></div>
 
        <!-- Back To Top Start -->
@@ -30,19 +29,25 @@
         <div class="mouseCursor cursor-inner"></div>
 
       <!-- Main Header-->
-      <header class="main-header header-style-one header-1">
+      <header class="main-header header-style-one header-2">
         <!-- Header Lower -->
         <div class="header-lower">
           <!-- Main box -->
           <div class="main-box">
             <div class="logo">
-              <a href="index.html"><img src="images/logo/flora-logo.jpeg" alt="Flora Logo" style="height: 50px; width: auto; object-fit: contain;"></a>
+              <a href="index.html"><img src="images/logo/flora-logo.png" alt="Flora Logo" style="height: 80px; width: auto; object-fit: contain;"></a>
             </div>
             <!--Nav Box-->
             <div class="nav-outer">
               <nav class="nav main-menu">
                 <ul class="navigation">
-                  <li class=" current"><a href="index.html">Home</a></li>
+                  <li class="dropdown current">
+                    <a href="index.html">Home</a>
+                    <ul>
+                      <li><a href="index.html">Home 01</a></li>
+                      <li><a href="index-2.html">Home 02</a></li>
+                    </ul>
+                  </li>
                   <li>
                     <a href="page-about.html">About</a>
                   </li>
@@ -62,19 +67,11 @@
                           <li><a href="page-team-details.html">Team Details</a></li>
                         </ul>
                       </li>
-                      <li class="dropdown"><a href="#">Shop</a>
-                        <ul>
-                          <li><a href="shop-products.html">Products</a></li>
-                          <li><a href="shop-products-sidebar.html">Products with Sidebar</a></li>
-                          <li><a href="shop-product-details.html">Product Details</a></li>
-                          <li><a href="shop-cart.html">Cart</a></li>
-                          <li><a href="shop-checkout.html">Checkout</a></li>
-                        </ul>
-                      </li>
-                       <li><a href="page-pricing.html">Pricing</a></li>
+                      
+                       
                       <li><a href="page-testimonial.html">Testimonials</a></li>
-                      <li><a href="page-faq.html">Faq</a></li>
-                      <li><a href="page-404.html">Error 404</a></li>
+                      
+                      
                     </ul>
                   </li>
                   
@@ -84,13 +81,7 @@
                       <li><a href="page-service-details.html">Services Details</a></li>
                     </ul>
                   </li>
-                  <li class="dropdown">
-                    <a href="#">News</a>
-                    <ul>
-                      <li><a href="news-grid.html">News Grid</a></li>
-                      <li><a href="news-details.html">News Details</a></li>
-                    </ul>
-                  </li>
+                  
                   <li>
                     <a href="page-contact.html">Contact</a>
                   </li>
@@ -100,33 +91,22 @@
               <div class="outer-box">
                 <!-- Main Menu End-->
                 <div class="ui-btn-outer">
-                  <ul class="header-contact">
-                    <li>
-                        <div class="icon">
-                          <img src="images/logo/location.png" alt="">
-                        </div>
-                        <div class="content">
-                          <div class="text">Tasgaon, Sangali, Maharashtra</div>
-                        </div>
-                    </li>
-                    <li>
-                      <div class="line"></div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                          <img src="images/logo/call.png" alt="">
-                        </div>
-                        <div class="content">
-                          <div class="text"><a href="tel:+918888276040">+91&nbsp;8888276040</a></div>
-                        </div>
-                    </li>
-                  </ul>
-                  <a href="index.html" class="contact-btn">
-                    Get Appointment
-                  </a>
+                  <div class="ui-btn-search">
+                    <button class="ui-btn ui-btn search-btn main-header__search search-toggler">
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                    </button>
+                    <a href="index-2.html" class="contact-btn">
+                      Get Appointment
+                    </a>
+                  </div>
+                  
                   <!-- Mobile Nav toggler -->
                 </div>
-                <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                <div class="mobile-nav-toggler">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
               </div>
             </div>
           </div>
@@ -141,7 +121,7 @@
           <nav class="menu-box">
             <div class="upper-box">
               <div class="nav-logo">
-                <a href="index.html"><img src="images/logo/flora-logo.jpeg" alt="Flora Logo" style="height: 50px; width: auto; object-fit: contain;"></a>
+                <a href="index.html"><img src="images/logo/flora-logo.png" alt="Flora Logo" style="height: 80px; width: auto; object-fit: contain;"></a>
               </div>
               <div class="close-btn"><i class="icon fa fa-times"></i></div>
             </div>
@@ -163,7 +143,7 @@
                 <div class="contact-info-box">
                   <span class="icon lnr-icon-envelope1"></span>
                   <span class="title">Send Email</span>
-                  <a href="https://html.kodesolution.com/cdn-cgi/l/email-protection#9cf4f9f0ecdcfff3f1ecfdf2e5b2fff3f1"><span class="__cf_email__" data-cfemail="d9b1bcb5a999bab6b4a9b8b7a0f7bab6b4">[email&#160;protected]</span></a>
+                  <a href="mailto:floralandscape.dev@gmail.com">floralandscape.dev@gmail.com</a>
                 </div>
               </li>
               <li>
@@ -185,13 +165,29 @@
         </div>
         <!-- End Mobile Menu -->
 
+         <!-- Header Search -->
+    <div class="search-popup">
+      <span class="search-back-drop"></span>
+      <button class="close-search"><span class="fa fa-times"></span></button>
+
+      <div class="search-inner">
+        <form method="post" action="https://html.kodesolution.com/2025/landspire-html/index.html">
+          <div class="form-group">
+            <input type="search" name="search-field" value="" placeholder="Search..." required="">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Header Search -->
+
         <!-- Sticky Header  -->
         <div class="sticky-header">
           <div class="auto-container">
             <div class="inner-container">
               <!--Logo-->
               <div class="logo">
-                <a href="index.html"><img src="images/logo/flora-logo.jpeg" alt="Flora Logo" style="height: 50px; width: auto; object-fit: contain;"></a>
+                <a href="index.html"><img src="images/logo/flora-logo.png" alt="Flora Logo" style="height: 80px; width: auto; object-fit: contain;"></a>
               </div>
 
               <!--Right Col-->
@@ -207,7 +203,11 @@
                 <!-- Main Menu End-->
 
                 <!--Mobile Navigation Toggler-->
-                <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                <div class="mobile-nav-toggler">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
               </div>
             </div>
           </div>
@@ -216,153 +216,84 @@
       </header>
       <!--End Main Header -->
 
-
     <div id="smooth-wrapper">
       <div id="smooth-content">
+        
 
-         <!-- Hero Section Start -->
-        <section class="hero-section hero-1">
-          <div class="hero-content">
-              <div class="container">
-                 <div class="row g-4 align-items-center">
-                    <div class="col-lg-9">
-                      <div class="content">
-                            <h1 class="title char-animation">
-                              Transforming Yards into Beautiful Outdoor Spaces
-                            </h1>
-                            <a class="theme-btn-main bg-white wow fadeInUp" data-wow-delay=".3s" href="page-contact.html">
-                              <span class="theme-btn-arrow-left"> <i class="fa-solid fa-arrow-right"></i> </span>
-                              <span class="theme-btn">Book a Carpenter Now</span>
-                              <span class="theme-btn-arrow-right"> <i class="fa-solid fa-arrow-right"></i> </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                      <div class="machine-image float-bob-x">
-                        <img src="images/banner/machine.png" alt="">
-                        <div class="vec-shape">
-                          <img src="images/banner/machine-vec.png" alt="">
-                        </div>
-                      </div>
-                    </div>
-                 </div>
+        <!-- Banner Section Start -->
+        <section class="hero-section-2 fix hero-2 bg-cover" style="background-image: url('images/resource/flora-pinterest-bg.jpg');">
+          <div class="hero-items">
+              <div class="content">
+                <h1 class="hero-title char-animation">
+                  Expert Care for Your <br> <span>Lawn & Outdoor Spaces</span>
+                </h1>
+                <p class="wow fadeInUp" data-wow-delay=".3s">
+                  Flora Landscape Developers provides expert landscape design, turf installation, garden maintenance, and advanced irrigation systems tailored to your residential or commercial needs. that it has a more-or-less 
+                </p>
+                <a class="theme-btn-main wow fadeInUp" data-wow-delay=".5s" href="index-2.html">
+                  <span class="theme-btn-arrow-left"> <i class="fa-solid fa-arrow-right"></i> </span>
+                  <span class="theme-btn">Book a Carpenter Now</span>
+                  <span class="theme-btn-arrow-right"> <i class="fa-solid fa-arrow-right"></i> </span>
+                </a>
               </div>
-          </div>
-          <div class="banner-image fix">
-            <img data-speed=".8" src="images/banner/banner-1-1.jpg" alt="">
-            <div class="hero-form">
-                <h3 class="book-title char-animation">Book a Free Consultaion</h3>
-                <form action="#" class="wow fadeInUp" data-wow-delay=".3s">
-                  <div class="row g-4">
-                      <div class="col-lg-6">
-                        <div class="form-clt">
-                            <p>Your Name</p>
-                            <input type="text" placeholder="Name">
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="form-clt">
-                            <p>Email Address</p>
-                            <input type="text" placeholder="Email">
-                        </div>
-                      </div>
-                       <div class="col-lg-6">
-                        <div class="form-clt">
-                            <p>Phone Number</p>
-                            <input type="text" placeholder="Phone Number">
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="form-clt">
-                            <p>Select Service</p>
-                             <div class="form">
-                                <select class="single-select w-100">
-                                    <option>Select Service</option>
-                                    <option>Digital Marketing</option>
-                                    <option>Software & IT Service</option>
-                                    <option>Finance & Investment</option>
-                                </select>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-12">
-                        <div class="form-clt">
-                            <p>Attach File</p>
-                            <input type="file" class="custom-file-input">
-                        </div>
-                      </div>
-                      <div class="col-lg-12">
-                        <div class="form-clt">
-                            <p>Message</p>
-                            <textarea name="message" placeholder="Describe your project"></textarea>
-                        </div>
-                      </div>
-                      <div class="col-lg-12">
-                        <button type="button" class="theme-btn-main">
-                              <span class="theme-btn-arrow-left"> <i class="fa-solid fa-arrow-right"></i> </span>
-                              <span class="theme-btn">Submit Request</span>
-                              <span class="theme-btn-arrow-right"> <i class="fa-solid fa-arrow-right"></i> </span>
-                            </button>
-                      </div>
+              <div class="hero-wrap wow fadeInUp" data-wow-delay=".3s">
+                <div class="hero-thumb">
+                  <img src="images/resource/flora-pinterest-2.jpg" alt="">
+                  <div class="small-content">
+                    <h4 class="title">
+                      Lawn Care & Turf Maintenance
+                    </h4>
+                    <a href="#" class="icon"> <i class="fa-solid fa-arrow-right"></i> </a>
                   </div>
-                </form>
-            </div>
+                </div>
+              </div>
           </div>
         </section>
 
         <!-- About Section Start -->
-        <section class="about-section fix section-padding pt-90">
+        <section class="about-section-2 fix section-padding">
           <div class="container">
               <div class="row g-4">
-                <div class="col-xl-7 col-lg-6">
-                  <div class="about-block-items-1">
-                      <div class="sec-title mb-0">
-                        <div class="sec-sub-title">
-                          <h6 class="sub-title tz-sub-tilte tz-sub-anim tx-subTitle">Who We Are</h6>
-                        </div>
-                          <h2 class="title tx-title sec_title  tz-itm-title tz-itm-anim">
-                          Crafting Beautiful Outdoor Spaces With Passion & <br> Precision
-                          </h2>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                  <div class="about-block-image-2">
+                      <div class="thumb fix">
+                        <img data-speed=".8" src="images/resource/flora-custom-4.jpeg" alt="">
                       </div>
-                      <div class="about-wrap">
-                        <div class="about-counter wow fadeInUp" data-wow-delay=".3s">
-                          <h3 class="count-box"><span class="count-text" data-speed="3000" data-stop="25">5</span>+</h3>
-                          <p>Years of Work <br> Experience</p>
-                          <a class="theme-btn-main" href="page-about.html">
-                              <span class="theme-btn-arrow-left"> <i class="fa-solid fa-arrow-right"></i> </span>
-                              <span class="theme-btn">Discover More</span>
-                              <span class="theme-btn-arrow-right"> <i class="fa-solid fa-arrow-right"></i> </span>
-                            </a>
-                        </div>
-                         <div class="about-right-items">
-                            <div class="about-text wow fadeInUp" data-wow-delay=".3s">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less </div>
-                            <div class="about-icon-items wow fadeInUp" data-wow-delay=".5s">
-                                <div class="icon-items">
-                                  <div class="icon">
-                                    <img src="images/icons/about-icon1-1.png" alt="">
-                                  </div>
-                                  <div class="content">
-                                    <h4 class="title">Expert Landscaping</h4>
-                                    <div class="text">It is a long established fact that a reader will be distracted by the readable </div>
-                                  </div>
-                                </div>
-                                 <div class="icon-items">
-                                  <div class="icon">
-                                    <img src="images/icons/about-icon1-2.png" alt="">
-                                  </div>
-                                  <div class="content">
-                                    <h4 class="title">Reliable Support</h4>
-                                    <div class="text">It is a long established fact that a reader will be distracted by the readable </div>
-                                  </div>
-                                </div>
-                            </div>
-                         </div>
+                      <div class="leaf-shape">
+                        <img src="images/icons/leaf2-1.png" alt="">
+                      </div>
+                      <div class="count-box">
+                        <h3 class="count-title"><span class="count-text" data-speed="3000" data-stop="25">5</span>+</h3>
+                        <div class="text">Years of Work Experience</div>
                       </div>
                   </div>
                 </div>
-                <div class="col-xl-5 col-lg-6">
-                  <div class="about-image-1 fix">
-                    <img data-speed=".8" src="images/resource/flora-custom-4.jpeg" alt="">
+                <div class="col-lg-6">
+                  <div class="about-single-content-2">
+                    <div class="sec-title mb-0">
+                      <div class="sec-sub-title">
+                        <h6 class="sub-title tz-sub-tilte tz-sub-anim tx-subTitle">Who We Are</h6>
+                      </div>
+                        <h2 class="title tx-title sec_title  tz-itm-title tz-itm-anim">
+                        Crafting Beautiful Outdoor Spaces With Passion & Precision
+                        </h2>
+                    </div>
+                    <div class="about-text wow fadeInUp" data-wow-delay=".3s">Flora Landscape Developers provides expert landscape design, turf installation, garden maintenance, and advanced irrigation systems tailored to your residential or commercial needs. that it has a more-or-less </div>
+                    <div class="counter-items wow fadeInUp" data-wow-delay=".5s">
+                        <div class="count-box">
+                          <h3 class="count-title"><span class="count-text" data-speed="3000" data-stop="98">5</span>%</h3>
+                          <div class="text">Customer <br> Satisfaction Rate</div>
+                        </div>
+                         <div class="count-box">
+                          <h3 class="count-title"><span class="count-text" data-speed="3000" data-stop="4.9">1</span>%</h3>
+                          <div class="text">Average <br> Customer Rating</div>
+                        </div>
+                    </div>
+                     <a class="theme-btn-main wow fadeInUp" data-wow-delay=".7s" href="page-about.html">
+                        <span class="theme-btn-arrow-left"> <i class="fa-solid fa-arrow-right"></i> </span>
+                        <span class="theme-btn">Discover More</span>
+                        <span class="theme-btn-arrow-right"> <i class="fa-solid fa-arrow-right"></i> </span>
+                      </a>
                   </div>
                 </div>
               </div>
@@ -370,699 +301,312 @@
         </section>
 
         <!-- Service Section Start -->
-        <section class="service-section fix section-padding section-bg">
+        <section class="service-section fix section-padding">
           <div class="container">
-            <div class="row g-4 justify-content-center">
-              <div class="col-lg-6">
-                <div class="sec-title mb-50 text-center">
-                  <div class="sec-sub-title bg-white">
-                    <h6 class="sub-title tz-sub-tilte tz-sub-anim tx-subTitle">Service Area</h6>
-                  </div>
-                  <h2 class="title tx-title sec_title  tz-itm-title tz-itm-anim">What We are Offering to Our Potential Client</h2>
+              <div class="row g-4 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="sec-title text-center mb-20">
+                      <div class="sec-sub-title">
+                        <h6 class="sub-title tz-sub-tilte tz-sub-anim tx-subTitle">Service Area</h6>
+                      </div>
+                        <h2 class="title tx-title sec_title  tz-itm-title tz-itm-anim">
+                        What We are Offering to Our Potential Client
+                        </h2>
+                    </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="service-wrapper bb-top tp-service-pin">
-            <div class="service-block-1 tp-service-panel">
-                <div class="container">
-                  <div class="row g-4 align-items-lg-center">
-                      <div class="col-xl-4 col-lg-4 col-md-6">
-                          <div class="content">
-                            <div class="icon">
-                                <img src="images/icons/service-icon1-1.png" alt="">
-                            </div>
-                            <h3 class="title">
-                              <a href="page-service-details.html">
-                                Trunkey Solution <span class="d-block">for Landscape Development</span>
-                              </a>
-                            </h3>
+              <div class="row">
+                  <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="service-block-items-2">
+                      <div class="content">
+                          <div class="icon">
+                            <img src="images/icons/service-icon1-1.png" alt="">
                           </div>
+                          <h4 class="title"><a href="page-service-details.html">Landscape Design <br> & Planning</a></h4>
                       </div>
-                      <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="service-image">
-                          <img src="images/resource/flora-custom-6.jpeg" alt="">
-                          <img src="images/resource/flora-custom-6.jpeg" alt="">
-                          <span class="number">
-                            01<b>.</b>
-                          </span>
-                        </div>
+                      <div class="thumb">
+                        <img src="images/resource/flora-custom-6.jpeg" alt="">
                       </div>
-                      <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="content-2">
-                          <div class="text">
-                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                          </div>
-                            <a href="page-service-details.html" class="link-btn">
-                              View Details <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                      </div>
+                    </div>
                   </div>
-                </div>
-            </div>
-            <div class="service-block-1 tp-service-panel">
-                <div class="container">
-                  <div class="row g-4 align-items-lg-center">
-                      <div class="col-xl-4 col-lg-4 col-md-6">
-                          <div class="content">
-                            <div class="icon">
-                                <img src="images/icons/service-icon1-2.png" alt="">
-                            </div>
-                            <h3 class="title">
-                              <a href="page-service-details.html">
-                                Environment <span class="d-block">Solution Services</span>
-                              </a>
-                            </h3>
+                   <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="service-block-items-2 active">
+                      <div class="content">
+                          <div class="icon">
+                            <img src="images/icons/service-icon1-2.png" alt="">
                           </div>
+                          <h4 class="title"><a href="page-service-details.html">Lawn Care & <br> Maintenance</a></h4>
                       </div>
-                      <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="service-image">
-                          <img src="images/resource/flora-custom-7.jpeg" alt="">
-                          <img src="images/resource/flora-custom-7.jpeg" alt="">
-                          <span class="number">
-                            02<b>.</b>
-                          </span>
-                        </div>
+                      <div class="thumb">
+                        <img src="images/resource/flora-custom-7.jpeg" alt="">
                       </div>
-                      <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="content-2">
-                          <div class="text">
-                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                          </div>
-                            <a href="page-service-details.html" class="link-btn">
-                              View Details <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                      </div>
+                    </div>
                   </div>
-                </div>
-            </div>
-            <div class="service-block-1 tp-service-panel">
-                <div class="container">
-                  <div class="row g-4 align-items-lg-center">
-                      <div class="col-xl-4 col-lg-4 col-md-6">
-                          <div class="content">
-                            <div class="icon">
-                                <img src="images/icons/service-icon1-3.png" alt="">
-                            </div>
-                            <h3 class="title">
-                              <a href="page-service-details.html">
-                                Automation and Manual <span class="d-block">Irrigation System</span>
-                              </a>
-                            </h3>
+                   <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="service-block-items-2">
+                      <div class="content">
+                          <div class="icon">
+                            <img src="images/icons/service-icon1-3.png" alt="">
                           </div>
+                          <h4 class="title"><a href="page-service-details.html">Professional <br> Turfing Services</a></h4>
                       </div>
-                      <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="service-image">
-                          <img src="images/resource/flora-custom-8.jpeg" alt="">
-                          <img src="images/resource/flora-custom-8.jpeg" alt="">
-                          <span class="number">
-                            03<b>.</b>
-                          </span>
-                        </div>
+                      <div class="thumb">
+                        <img src="images/resource/flora-custom-8.jpeg" alt="">
                       </div>
-                      <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="content-2">
-                          <div class="text">
-                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                          </div>
-                            <a href="page-service-details.html" class="link-btn">
-                              View Details <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                      </div>
+                    </div>
                   </div>
-                </div>
-            </div>
-            <div class="service-block-1 tp-service-panel">
-                <div class="container">
-                  <div class="row g-4 align-items-lg-center">
-                      <div class="col-xl-4 col-lg-4 col-md-6">
-                          <div class="content">
-                            <div class="icon">
-                                <img src="images/icons/service-icon1-4.png" alt="">
-                            </div>
-                            <h3 class="title">
-                              <a href="page-service-details.html">
-                                Consultancy and <span class="d-block">Advance Farming Units</span>
-                              </a>
-                            </h3>
+                   <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                    <div class="service-block-items-2">
+                      <div class="content">
+                          <div class="icon">
+                            <img src="images/icons/service-icon1-4.png" alt="">
                           </div>
+                          <h4 class="title"><a href="page-service-details.html">Garden <br> Installation</a></h4>
                       </div>
-                      <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="service-image">
-                          <img src="images/resource/flora-custom-9.jpeg" alt="">
-                          <img src="images/resource/flora-custom-9.jpeg" alt="">
-                          <span class="number">
-                            04<b>.</b>
-                          </span>
-                        </div>
+                      <div class="thumb">
+                        <img src="images/resource/flora-custom-9.jpeg" alt="">
                       </div>
-                      <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="content-2">
-                          <div class="text">
-                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                          </div>
-                            <a href="page-service-details.html" class="link-btn">
-                              View Details <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                      </div>
+                    </div>
                   </div>
-                </div>
-            </div>
+              </div>
           </div>
         </section>
-          
+
         <!-- Choose Us Section Start -->
-        <section class="choose-us section-padding fix">
+        <section class="choose-us-section-2 fix section-padding section-bg">
+          <div class="shape1 d-none d-xxl-block">
+            <img src="images/icons/choose-shape2-1.png" alt="">
+          </div>
+           <div class="shape2 d-none d-xxl-block">
+            <img src="images/icons/choose-shape2-2.png" alt="">
+          </div>
+           <div class="shape3 d-none d-xxl-block">
+            <img src="images/icons/choose-shape2-3.png" alt="">
+          </div>
           <div class="container">
-            <div class="row g-4 align-items-end mb-30">
-              <div class="col-xl-7 col-lg-7">
-                <div class="sec-title mb-0">
-                  <div class="sec-sub-title"><h6 class="sub-title tz-sub-tilte tz-sub-anim tx-subTitle">Why Choose Us</h6></div>
-                  <h2 class="title tx-title sec_title  tz-itm-title tz-itm-anim">Why Homeowners Trust Our Landscaping Expertise</h2>
+             <div class="row g-4 justify-content-center">
+                <div class="col-lg-7">
+                    <div class="sec-title text-center">
+                      <div class="bg-white sec-sub-title">
+                        <h6 class="sub-title tz-sub-tilte tz-sub-anim tx-subTitle">Why Choose Us</h6>
+                      </div>
+                        <h2 class="title tx-title sec_title  tz-itm-title tz-itm-anim">
+                        Why Homeowners Trust Our Landscaping Expertise
+                        </h2>
+                    </div>
                 </div>
               </div>
-              <div class="col-xl-5 col-lg-5 wow fadeInUp">
-                <p class="mb-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xl-5 col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                <div class="choose-us-block1">
-                  <div class="thumb">
-                    <img src="images/resource/choose-us-1-1.jpg" alt="">
-                  </div>
-                  <div class="flower-shape">
-                    <img src="images/icons/flowers1-1.png" alt="">
+              <div class="row align-items-center">
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                    <ul class="choose-us-block-list2">
+                        <li>
+                            <div class="icon">
+                              <img src="images/icons/choose-us-icon1-1.png" alt="">
+                            </div>
+                            <div class="content">
+                              <h4 class="title">Experienced & Skilled Team </h4>
+                              <div class="text">It is a long established fact that a reder will be distracted by the readable</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                              <img src="images/icons/choose-us-icon1-1.png" alt="">
+                            </div>
+                            <div class="content">
+                              <h4 class="title">Custom Outdoor Solutions</h4>
+                              <div class="text">It is a long established fact that a reder will be distracted by the readable</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 order-2 order-xl-1 wow fadeInUp" data-wow-delay=".5s">
+                  <div class="choose-us-image-2">
+                    <img src="images/resource/choose-us-2-1.jpg" alt="">
                   </div>
                 </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 order-1 order-xl-2 wow fadeInUp" data-wow-delay=".7s">
+                    <ul class="choose-us-block-list2">
+                        <li>
+                            <div class="icon">
+                              <img src="images/icons/choose-us-icon1-1.png" alt="">
+                            </div>
+                            <div class="content">
+                              <h4 class="title">High-Quality Materials</h4>
+                              <div class="text">It is a long established fact that a reder will be distracted by the readable</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                              <img src="images/icons/choose-us-icon1-1.png" alt="">
+                            </div>
+                            <div class="content">
+                              <h4 class="title">Reliable & On-Time Service</h4>
+                              <div class="text">It is a long established fact that a reder will be distracted by the readable</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
               </div>
-              <div class="col-xl-5 offset-xl-2 col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                <ul class="choose-us-block-content1">
-                  <li>
-                    <div class="icon">
-                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_1_848)">
-                          <path d="M15.6174 17.9075C15.5927 18.2781 15.5461 18.6489 15.5475 19.0195C15.553 20.6083 15.5403 22.1983 15.5969 23.7857C15.646 25.1704 15.7744 26.5527 15.8772 27.9355C15.9171 28.4718 15.9811 29.0065 16.0379 29.5416C16.0496 29.6513 16.0372 29.7162 15.9003 29.7349C15.3177 29.8144 14.7362 29.9016 14.1558 29.9944C14.0414 30.0127 14.0087 29.9881 13.9997 29.8774C13.8958 28.6222 13.773 27.3682 13.685 26.112C13.6101 25.045 13.5743 23.9752 13.5204 22.9068C13.5186 22.8709 13.5079 22.8357 13.4575 22.7888C13.2662 23.1699 13.0831 23.5552 12.8822 23.9313C12.1993 25.2099 11.5166 26.4884 10.8205 27.76C10.5459 28.2614 10.2392 28.7464 9.93831 29.2336C9.91198 29.2763 9.7937 29.3174 9.76285 29.2964C9.23731 28.9389 8.71877 28.5717 8.19919 28.2057C8.18993 28.1992 8.18705 28.1841 8.18726 28.1845C10.2104 24.7641 12.0259 21.2542 13.4739 17.5702C13.4536 17.5517 13.433 17.5332 13.4126 17.5147C13.3227 17.5735 13.2213 17.6208 13.1446 17.6931C12.3992 18.3961 11.6371 19.0836 10.9199 19.8131C9.19576 21.5668 7.58849 23.4218 6.02545 25.3137C5.85452 25.5205 5.67372 25.7204 5.51678 25.9368C5.41619 26.0753 5.33618 26.0989 5.19076 25.9964C4.80262 25.7226 4.40522 25.4613 4.01092 25.1958C3.90005 25.1211 3.78753 25.0486 3.65877 24.9639C5.1634 23.055 6.78465 21.2497 8.39727 19.4375C6.00447 20.165 3.65466 20.9784 1.20385 21.5259C1.14749 21.1567 1.10142 20.8272 1.04609 20.499C0.998779 20.2182 0.942831 19.9388 0.887501 19.6593C0.871457 19.5778 0.861995 19.525 0.974508 19.4926C2.63711 19.0137 4.29909 18.5323 5.95881 18.0446C7.68867 17.536 9.3778 16.9182 11.0291 16.2017C11.4117 16.0358 11.7961 15.8741 12.1834 15.6664C12.1096 15.6467 12.0366 15.613 11.9619 15.6096C11.2835 15.5774 10.6045 15.5188 9.92679 15.5285C8.30286 15.5516 6.6777 15.577 5.05624 15.6593C3.59686 15.7336 2.14139 15.882 0.684895 16.0044C0.32144 16.035 0.316914 16.0479 0.255824 15.7072C0.16676 15.2092 0.0861293 14.7095 0.00385297 14.21C-0.00416897 14.1617 0.00282452 14.111 0.00282452 14.0426C2.40776 13.7351 4.82442 13.6168 7.24149 13.5032L7.25054 13.4473C7.13844 13.3969 7.02305 13.3524 6.91465 13.2953C5.53632 12.5703 4.15325 11.8534 2.78376 11.1128C2.11095 10.749 1.46364 10.3401 0.804607 9.95177C0.693534 9.88634 0.615577 9.8191 0.719863 9.682C1.07488 9.21475 1.42476 8.74366 1.77711 8.27439C1.79213 8.25446 1.81105 8.23755 1.83203 8.215C5.26501 10.2217 8.76258 12.0962 12.4996 13.5056C12.5129 13.4915 12.5261 13.4773 12.5395 13.4632C12.384 13.2689 12.2353 13.0694 12.0721 12.8816C10.9639 11.605 9.74393 10.4357 8.47523 9.31359C8.16319 9.03759 7.86865 8.74266 7.55353 8.47027C6.70012 7.73244 5.84115 7.00065 4.98219 6.26926C4.65041 5.98661 4.30958 5.71403 3.98027 5.42896C3.94077 5.39474 3.91239 5.28562 3.93707 5.252C4.30834 4.74347 4.68928 4.24159 5.08544 3.71494C7.01421 5.20328 8.76196 6.84664 10.6004 8.40666C10.5819 8.35029 10.563 8.29392 10.5449 8.23735C10.1958 7.145 9.82826 6.05768 9.50286 4.95848C9.15421 3.78057 8.84629 2.59118 8.51719 1.40784C8.47646 1.26168 8.49024 1.20088 8.67207 1.17592C9.22291 1.10022 9.77087 1.00218 10.3176 0.900919C10.4813 0.87052 10.5402 0.908166 10.5834 1.07123C10.9131 2.31417 11.2397 3.55832 11.5972 4.7938C12.1647 6.75545 12.8787 8.66978 13.6142 10.5757C13.8059 11.0725 14.0459 11.5514 14.2646 12.0382C14.2739 12.059 14.2932 12.0753 14.3491 12.1459C14.3751 11.9694 14.4067 11.8448 14.4094 11.7195C14.4318 10.6499 14.4723 9.58014 14.4612 8.51074C14.4501 7.43489 14.4022 6.35885 14.3409 5.28442C14.2796 4.20998 14.186 3.13716 14.0986 2.06434C14.0538 1.51554 13.9935 0.967757 13.9351 0.419971C13.9244 0.320721 13.9557 0.287302 14.0546 0.272606C14.5914 0.193085 15.1273 0.107525 15.6633 0.0223676C15.9706 -0.0263514 15.9836 -0.0199092 16.0082 0.276632C16.1596 2.09353 16.3127 3.91042 16.4581 5.72772C16.491 6.1378 16.4951 6.5501 16.5134 6.96139C16.5173 7.04635 16.5262 7.13111 16.5365 7.26176C16.7142 6.91328 16.8625 6.60909 17.0225 6.31073C17.8492 4.76944 18.6756 3.22836 19.5099 1.69109C19.6671 1.4016 19.8721 1.13706 20.0303 0.847972C20.1206 0.683093 20.198 0.698393 20.3271 0.789792C20.7153 1.06399 21.1083 1.33134 21.4992 1.60191C21.6094 1.67821 21.7186 1.75632 21.8172 1.82597C19.8092 5.25965 17.9366 8.74789 16.5864 12.5035C16.6564 12.4578 16.7356 12.4215 16.7952 12.3654C17.5958 11.6096 18.4307 10.8845 19.1839 10.0858C20.416 8.7795 21.6039 7.43268 22.7921 6.08727C23.3794 5.42232 23.928 4.72435 24.4887 4.03705C24.586 3.91767 24.6485 3.88163 24.7956 3.98994C25.2907 4.35453 25.8008 4.69918 26.3228 5.06377C24.7875 6.9626 23.2342 8.81352 21.582 10.6057C21.6528 10.592 21.726 10.5855 21.7939 10.5632C22.634 10.288 23.4693 9.99888 24.3136 9.73737C25.0899 9.49679 25.874 9.28018 26.6573 9.06215C27.3101 8.88036 27.9671 8.71326 28.6212 8.5357C28.7382 8.50389 28.8047 8.51899 28.8267 8.65005C28.9207 9.21193 29.0169 9.77361 29.1188 10.3343C29.1437 10.471 29.0949 10.5277 28.9612 10.5606C28.4408 10.6886 27.9175 10.809 27.4049 10.9626C25.8598 11.4256 24.3083 11.8715 22.7798 12.3833C21.2202 12.9053 19.6706 13.4607 18.1824 14.1637C18.0573 14.2229 17.9263 14.27 17.798 14.3226C17.7994 14.3419 17.8008 14.3612 17.8021 14.3808C18.19 14.4126 18.5773 14.4555 18.9661 14.4744C20.5324 14.5505 22.0979 14.5056 23.6624 14.4224C24.806 14.3616 25.9497 14.2976 27.0919 14.2151C27.84 14.1609 28.5854 14.0711 29.3323 13.9975C29.403 13.9904 29.4744 13.9868 29.5448 13.9769C29.6474 13.9624 29.6996 13.9983 29.7163 14.1033C29.8035 14.6534 29.8971 15.2025 29.9851 15.7525C30.0213 15.9792 30.0117 15.976 29.7626 15.999C29.0608 16.0638 28.3608 16.1475 27.6586 16.2045C26.6914 16.2828 25.723 16.3489 24.7544 16.4098C24.1347 16.4489 23.5137 16.4688 22.8933 16.4994C22.8468 16.5017 22.8014 16.5218 22.7181 16.5433C23.1009 16.7412 23.4475 16.9156 23.7895 17.0982C25.2824 17.8952 26.7759 18.691 28.2647 19.4957C28.5984 19.676 28.9116 19.892 29.2374 20.0863C29.3572 20.1576 29.3598 20.2289 29.28 20.3319C28.932 20.7809 28.5852 21.2306 28.2433 21.6842C28.1642 21.7893 28.0985 21.7673 28.0008 21.712C26.8142 21.0402 25.6342 20.3561 24.4337 19.7086C23.5396 19.2263 22.6309 18.7659 21.7059 18.3435C20.4298 17.7609 19.1325 17.2224 17.8426 16.6687C17.7268 16.619 17.5982 16.5979 17.4612 16.592C20.0863 19.5625 23.0515 22.1679 26.1346 24.6764C25.9094 24.9794 25.6796 25.2896 25.4486 25.5992C25.3075 25.7884 25.1602 25.9735 25.0253 26.1667C24.9496 26.2752 24.8928 26.2934 24.7826 26.1995C23.3866 25.011 21.9834 23.8302 20.5902 22.6382C20.2498 22.3469 19.9392 22.022 19.6144 21.7134C19.5609 21.6626 19.5042 21.6151 19.4488 21.566L19.4046 21.5906C19.4682 21.7987 19.5301 22.0073 19.5957 22.2149C20.0373 23.6112 20.4944 25.0031 20.9158 26.4053C21.14 27.151 21.3017 27.9146 21.4955 28.6691C21.5236 28.7788 21.5041 28.8322 21.3807 28.8509C20.8121 28.9371 20.244 29.0273 19.6767 29.1203C19.5264 29.1448 19.4698 29.1021 19.4313 28.9457C19.2637 28.2631 19.0901 27.5808 18.8889 26.907C18.4722 25.5108 18.0654 24.1109 17.5997 22.7302C17.2047 21.5602 16.7382 20.4129 16.2917 19.2599C16.1339 18.8524 15.9422 18.4573 15.7643 18.0572C15.7396 18.0015 15.7059 17.9495 15.6765 17.896C15.6569 17.8994 15.6374 17.9028 15.6178 17.9064L15.6174 17.9075Z" fill="#10551F"/>
-                          </g>
-                          <defs>
-                          <clipPath id="clip0_1_848">
-                          <rect width="30" height="30" fill="white"/>
-                          </clipPath>
-                          </defs>
-                      </svg>
-                    </div>
-                    <div class="content">
-                      <h4 class="title">Experienced & Skilled Team</h4>
-                      <div class="text">It is a long established fact that a reader will be distracted by the readable</div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_1_848)">
-                          <path d="M15.6174 17.9075C15.5927 18.2781 15.5461 18.6489 15.5475 19.0195C15.553 20.6083 15.5403 22.1983 15.5969 23.7857C15.646 25.1704 15.7744 26.5527 15.8772 27.9355C15.9171 28.4718 15.9811 29.0065 16.0379 29.5416C16.0496 29.6513 16.0372 29.7162 15.9003 29.7349C15.3177 29.8144 14.7362 29.9016 14.1558 29.9944C14.0414 30.0127 14.0087 29.9881 13.9997 29.8774C13.8958 28.6222 13.773 27.3682 13.685 26.112C13.6101 25.045 13.5743 23.9752 13.5204 22.9068C13.5186 22.8709 13.5079 22.8357 13.4575 22.7888C13.2662 23.1699 13.0831 23.5552 12.8822 23.9313C12.1993 25.2099 11.5166 26.4884 10.8205 27.76C10.5459 28.2614 10.2392 28.7464 9.93831 29.2336C9.91198 29.2763 9.7937 29.3174 9.76285 29.2964C9.23731 28.9389 8.71877 28.5717 8.19919 28.2057C8.18993 28.1992 8.18705 28.1841 8.18726 28.1845C10.2104 24.7641 12.0259 21.2542 13.4739 17.5702C13.4536 17.5517 13.433 17.5332 13.4126 17.5147C13.3227 17.5735 13.2213 17.6208 13.1446 17.6931C12.3992 18.3961 11.6371 19.0836 10.9199 19.8131C9.19576 21.5668 7.58849 23.4218 6.02545 25.3137C5.85452 25.5205 5.67372 25.7204 5.51678 25.9368C5.41619 26.0753 5.33618 26.0989 5.19076 25.9964C4.80262 25.7226 4.40522 25.4613 4.01092 25.1958C3.90005 25.1211 3.78753 25.0486 3.65877 24.9639C5.1634 23.055 6.78465 21.2497 8.39727 19.4375C6.00447 20.165 3.65466 20.9784 1.20385 21.5259C1.14749 21.1567 1.10142 20.8272 1.04609 20.499C0.998779 20.2182 0.942831 19.9388 0.887501 19.6593C0.871457 19.5778 0.861995 19.525 0.974508 19.4926C2.63711 19.0137 4.29909 18.5323 5.95881 18.0446C7.68867 17.536 9.3778 16.9182 11.0291 16.2017C11.4117 16.0358 11.7961 15.8741 12.1834 15.6664C12.1096 15.6467 12.0366 15.613 11.9619 15.6096C11.2835 15.5774 10.6045 15.5188 9.92679 15.5285C8.30286 15.5516 6.6777 15.577 5.05624 15.6593C3.59686 15.7336 2.14139 15.882 0.684895 16.0044C0.32144 16.035 0.316914 16.0479 0.255824 15.7072C0.16676 15.2092 0.0861293 14.7095 0.00385297 14.21C-0.00416897 14.1617 0.00282452 14.111 0.00282452 14.0426C2.40776 13.7351 4.82442 13.6168 7.24149 13.5032L7.25054 13.4473C7.13844 13.3969 7.02305 13.3524 6.91465 13.2953C5.53632 12.5703 4.15325 11.8534 2.78376 11.1128C2.11095 10.749 1.46364 10.3401 0.804607 9.95177C0.693534 9.88634 0.615577 9.8191 0.719863 9.682C1.07488 9.21475 1.42476 8.74366 1.77711 8.27439C1.79213 8.25446 1.81105 8.23755 1.83203 8.215C5.26501 10.2217 8.76258 12.0962 12.4996 13.5056C12.5129 13.4915 12.5261 13.4773 12.5395 13.4632C12.384 13.2689 12.2353 13.0694 12.0721 12.8816C10.9639 11.605 9.74393 10.4357 8.47523 9.31359C8.16319 9.03759 7.86865 8.74266 7.55353 8.47027C6.70012 7.73244 5.84115 7.00065 4.98219 6.26926C4.65041 5.98661 4.30958 5.71403 3.98027 5.42896C3.94077 5.39474 3.91239 5.28562 3.93707 5.252C4.30834 4.74347 4.68928 4.24159 5.08544 3.71494C7.01421 5.20328 8.76196 6.84664 10.6004 8.40666C10.5819 8.35029 10.563 8.29392 10.5449 8.23735C10.1958 7.145 9.82826 6.05768 9.50286 4.95848C9.15421 3.78057 8.84629 2.59118 8.51719 1.40784C8.47646 1.26168 8.49024 1.20088 8.67207 1.17592C9.22291 1.10022 9.77087 1.00218 10.3176 0.900919C10.4813 0.87052 10.5402 0.908166 10.5834 1.07123C10.9131 2.31417 11.2397 3.55832 11.5972 4.7938C12.1647 6.75545 12.8787 8.66978 13.6142 10.5757C13.8059 11.0725 14.0459 11.5514 14.2646 12.0382C14.2739 12.059 14.2932 12.0753 14.3491 12.1459C14.3751 11.9694 14.4067 11.8448 14.4094 11.7195C14.4318 10.6499 14.4723 9.58014 14.4612 8.51074C14.4501 7.43489 14.4022 6.35885 14.3409 5.28442C14.2796 4.20998 14.186 3.13716 14.0986 2.06434C14.0538 1.51554 13.9935 0.967757 13.9351 0.419971C13.9244 0.320721 13.9557 0.287302 14.0546 0.272606C14.5914 0.193085 15.1273 0.107525 15.6633 0.0223676C15.9706 -0.0263514 15.9836 -0.0199092 16.0082 0.276632C16.1596 2.09353 16.3127 3.91042 16.4581 5.72772C16.491 6.1378 16.4951 6.5501 16.5134 6.96139C16.5173 7.04635 16.5262 7.13111 16.5365 7.26176C16.7142 6.91328 16.8625 6.60909 17.0225 6.31073C17.8492 4.76944 18.6756 3.22836 19.5099 1.69109C19.6671 1.4016 19.8721 1.13706 20.0303 0.847972C20.1206 0.683093 20.198 0.698393 20.3271 0.789792C20.7153 1.06399 21.1083 1.33134 21.4992 1.60191C21.6094 1.67821 21.7186 1.75632 21.8172 1.82597C19.8092 5.25965 17.9366 8.74789 16.5864 12.5035C16.6564 12.4578 16.7356 12.4215 16.7952 12.3654C17.5958 11.6096 18.4307 10.8845 19.1839 10.0858C20.416 8.7795 21.6039 7.43268 22.7921 6.08727C23.3794 5.42232 23.928 4.72435 24.4887 4.03705C24.586 3.91767 24.6485 3.88163 24.7956 3.98994C25.2907 4.35453 25.8008 4.69918 26.3228 5.06377C24.7875 6.9626 23.2342 8.81352 21.582 10.6057C21.6528 10.592 21.726 10.5855 21.7939 10.5632C22.634 10.288 23.4693 9.99888 24.3136 9.73737C25.0899 9.49679 25.874 9.28018 26.6573 9.06215C27.3101 8.88036 27.9671 8.71326 28.6212 8.5357C28.7382 8.50389 28.8047 8.51899 28.8267 8.65005C28.9207 9.21193 29.0169 9.77361 29.1188 10.3343C29.1437 10.471 29.0949 10.5277 28.9612 10.5606C28.4408 10.6886 27.9175 10.809 27.4049 10.9626C25.8598 11.4256 24.3083 11.8715 22.7798 12.3833C21.2202 12.9053 19.6706 13.4607 18.1824 14.1637C18.0573 14.2229 17.9263 14.27 17.798 14.3226C17.7994 14.3419 17.8008 14.3612 17.8021 14.3808C18.19 14.4126 18.5773 14.4555 18.9661 14.4744C20.5324 14.5505 22.0979 14.5056 23.6624 14.4224C24.806 14.3616 25.9497 14.2976 27.0919 14.2151C27.84 14.1609 28.5854 14.0711 29.3323 13.9975C29.403 13.9904 29.4744 13.9868 29.5448 13.9769C29.6474 13.9624 29.6996 13.9983 29.7163 14.1033C29.8035 14.6534 29.8971 15.2025 29.9851 15.7525C30.0213 15.9792 30.0117 15.976 29.7626 15.999C29.0608 16.0638 28.3608 16.1475 27.6586 16.2045C26.6914 16.2828 25.723 16.3489 24.7544 16.4098C24.1347 16.4489 23.5137 16.4688 22.8933 16.4994C22.8468 16.5017 22.8014 16.5218 22.7181 16.5433C23.1009 16.7412 23.4475 16.9156 23.7895 17.0982C25.2824 17.8952 26.7759 18.691 28.2647 19.4957C28.5984 19.676 28.9116 19.892 29.2374 20.0863C29.3572 20.1576 29.3598 20.2289 29.28 20.3319C28.932 20.7809 28.5852 21.2306 28.2433 21.6842C28.1642 21.7893 28.0985 21.7673 28.0008 21.712C26.8142 21.0402 25.6342 20.3561 24.4337 19.7086C23.5396 19.2263 22.6309 18.7659 21.7059 18.3435C20.4298 17.7609 19.1325 17.2224 17.8426 16.6687C17.7268 16.619 17.5982 16.5979 17.4612 16.592C20.0863 19.5625 23.0515 22.1679 26.1346 24.6764C25.9094 24.9794 25.6796 25.2896 25.4486 25.5992C25.3075 25.7884 25.1602 25.9735 25.0253 26.1667C24.9496 26.2752 24.8928 26.2934 24.7826 26.1995C23.3866 25.011 21.9834 23.8302 20.5902 22.6382C20.2498 22.3469 19.9392 22.022 19.6144 21.7134C19.5609 21.6626 19.5042 21.6151 19.4488 21.566L19.4046 21.5906C19.4682 21.7987 19.5301 22.0073 19.5957 22.2149C20.0373 23.6112 20.4944 25.0031 20.9158 26.4053C21.14 27.151 21.3017 27.9146 21.4955 28.6691C21.5236 28.7788 21.5041 28.8322 21.3807 28.8509C20.8121 28.9371 20.244 29.0273 19.6767 29.1203C19.5264 29.1448 19.4698 29.1021 19.4313 28.9457C19.2637 28.2631 19.0901 27.5808 18.8889 26.907C18.4722 25.5108 18.0654 24.1109 17.5997 22.7302C17.2047 21.5602 16.7382 20.4129 16.2917 19.2599C16.1339 18.8524 15.9422 18.4573 15.7643 18.0572C15.7396 18.0015 15.7059 17.9495 15.6765 17.896C15.6569 17.8994 15.6374 17.9028 15.6178 17.9064L15.6174 17.9075Z" fill="#10551F"/>
-                          </g>
-                          <defs>
-                          <clipPath id="clip0_1_8481">
-                          <rect width="30" height="30" fill="white"/>
-                          </clipPath>
-                          </defs>
-                      </svg>
-                    </div>
-                    <div class="content">
-                      <h4 class="title">Custom Outdoor Solutions</h4>
-                      <div class="text">It is a long established fact that a reader will be distracted by the readable</div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_1_848)">
-                          <path d="M15.6174 17.9075C15.5927 18.2781 15.5461 18.6489 15.5475 19.0195C15.553 20.6083 15.5403 22.1983 15.5969 23.7857C15.646 25.1704 15.7744 26.5527 15.8772 27.9355C15.9171 28.4718 15.9811 29.0065 16.0379 29.5416C16.0496 29.6513 16.0372 29.7162 15.9003 29.7349C15.3177 29.8144 14.7362 29.9016 14.1558 29.9944C14.0414 30.0127 14.0087 29.9881 13.9997 29.8774C13.8958 28.6222 13.773 27.3682 13.685 26.112C13.6101 25.045 13.5743 23.9752 13.5204 22.9068C13.5186 22.8709 13.5079 22.8357 13.4575 22.7888C13.2662 23.1699 13.0831 23.5552 12.8822 23.9313C12.1993 25.2099 11.5166 26.4884 10.8205 27.76C10.5459 28.2614 10.2392 28.7464 9.93831 29.2336C9.91198 29.2763 9.7937 29.3174 9.76285 29.2964C9.23731 28.9389 8.71877 28.5717 8.19919 28.2057C8.18993 28.1992 8.18705 28.1841 8.18726 28.1845C10.2104 24.7641 12.0259 21.2542 13.4739 17.5702C13.4536 17.5517 13.433 17.5332 13.4126 17.5147C13.3227 17.5735 13.2213 17.6208 13.1446 17.6931C12.3992 18.3961 11.6371 19.0836 10.9199 19.8131C9.19576 21.5668 7.58849 23.4218 6.02545 25.3137C5.85452 25.5205 5.67372 25.7204 5.51678 25.9368C5.41619 26.0753 5.33618 26.0989 5.19076 25.9964C4.80262 25.7226 4.40522 25.4613 4.01092 25.1958C3.90005 25.1211 3.78753 25.0486 3.65877 24.9639C5.1634 23.055 6.78465 21.2497 8.39727 19.4375C6.00447 20.165 3.65466 20.9784 1.20385 21.5259C1.14749 21.1567 1.10142 20.8272 1.04609 20.499C0.998779 20.2182 0.942831 19.9388 0.887501 19.6593C0.871457 19.5778 0.861995 19.525 0.974508 19.4926C2.63711 19.0137 4.29909 18.5323 5.95881 18.0446C7.68867 17.536 9.3778 16.9182 11.0291 16.2017C11.4117 16.0358 11.7961 15.8741 12.1834 15.6664C12.1096 15.6467 12.0366 15.613 11.9619 15.6096C11.2835 15.5774 10.6045 15.5188 9.92679 15.5285C8.30286 15.5516 6.6777 15.577 5.05624 15.6593C3.59686 15.7336 2.14139 15.882 0.684895 16.0044C0.32144 16.035 0.316914 16.0479 0.255824 15.7072C0.16676 15.2092 0.0861293 14.7095 0.00385297 14.21C-0.00416897 14.1617 0.00282452 14.111 0.00282452 14.0426C2.40776 13.7351 4.82442 13.6168 7.24149 13.5032L7.25054 13.4473C7.13844 13.3969 7.02305 13.3524 6.91465 13.2953C5.53632 12.5703 4.15325 11.8534 2.78376 11.1128C2.11095 10.749 1.46364 10.3401 0.804607 9.95177C0.693534 9.88634 0.615577 9.8191 0.719863 9.682C1.07488 9.21475 1.42476 8.74366 1.77711 8.27439C1.79213 8.25446 1.81105 8.23755 1.83203 8.215C5.26501 10.2217 8.76258 12.0962 12.4996 13.5056C12.5129 13.4915 12.5261 13.4773 12.5395 13.4632C12.384 13.2689 12.2353 13.0694 12.0721 12.8816C10.9639 11.605 9.74393 10.4357 8.47523 9.31359C8.16319 9.03759 7.86865 8.74266 7.55353 8.47027C6.70012 7.73244 5.84115 7.00065 4.98219 6.26926C4.65041 5.98661 4.30958 5.71403 3.98027 5.42896C3.94077 5.39474 3.91239 5.28562 3.93707 5.252C4.30834 4.74347 4.68928 4.24159 5.08544 3.71494C7.01421 5.20328 8.76196 6.84664 10.6004 8.40666C10.5819 8.35029 10.563 8.29392 10.5449 8.23735C10.1958 7.145 9.82826 6.05768 9.50286 4.95848C9.15421 3.78057 8.84629 2.59118 8.51719 1.40784C8.47646 1.26168 8.49024 1.20088 8.67207 1.17592C9.22291 1.10022 9.77087 1.00218 10.3176 0.900919C10.4813 0.87052 10.5402 0.908166 10.5834 1.07123C10.9131 2.31417 11.2397 3.55832 11.5972 4.7938C12.1647 6.75545 12.8787 8.66978 13.6142 10.5757C13.8059 11.0725 14.0459 11.5514 14.2646 12.0382C14.2739 12.059 14.2932 12.0753 14.3491 12.1459C14.3751 11.9694 14.4067 11.8448 14.4094 11.7195C14.4318 10.6499 14.4723 9.58014 14.4612 8.51074C14.4501 7.43489 14.4022 6.35885 14.3409 5.28442C14.2796 4.20998 14.186 3.13716 14.0986 2.06434C14.0538 1.51554 13.9935 0.967757 13.9351 0.419971C13.9244 0.320721 13.9557 0.287302 14.0546 0.272606C14.5914 0.193085 15.1273 0.107525 15.6633 0.0223676C15.9706 -0.0263514 15.9836 -0.0199092 16.0082 0.276632C16.1596 2.09353 16.3127 3.91042 16.4581 5.72772C16.491 6.1378 16.4951 6.5501 16.5134 6.96139C16.5173 7.04635 16.5262 7.13111 16.5365 7.26176C16.7142 6.91328 16.8625 6.60909 17.0225 6.31073C17.8492 4.76944 18.6756 3.22836 19.5099 1.69109C19.6671 1.4016 19.8721 1.13706 20.0303 0.847972C20.1206 0.683093 20.198 0.698393 20.3271 0.789792C20.7153 1.06399 21.1083 1.33134 21.4992 1.60191C21.6094 1.67821 21.7186 1.75632 21.8172 1.82597C19.8092 5.25965 17.9366 8.74789 16.5864 12.5035C16.6564 12.4578 16.7356 12.4215 16.7952 12.3654C17.5958 11.6096 18.4307 10.8845 19.1839 10.0858C20.416 8.7795 21.6039 7.43268 22.7921 6.08727C23.3794 5.42232 23.928 4.72435 24.4887 4.03705C24.586 3.91767 24.6485 3.88163 24.7956 3.98994C25.2907 4.35453 25.8008 4.69918 26.3228 5.06377C24.7875 6.9626 23.2342 8.81352 21.582 10.6057C21.6528 10.592 21.726 10.5855 21.7939 10.5632C22.634 10.288 23.4693 9.99888 24.3136 9.73737C25.0899 9.49679 25.874 9.28018 26.6573 9.06215C27.3101 8.88036 27.9671 8.71326 28.6212 8.5357C28.7382 8.50389 28.8047 8.51899 28.8267 8.65005C28.9207 9.21193 29.0169 9.77361 29.1188 10.3343C29.1437 10.471 29.0949 10.5277 28.9612 10.5606C28.4408 10.6886 27.9175 10.809 27.4049 10.9626C25.8598 11.4256 24.3083 11.8715 22.7798 12.3833C21.2202 12.9053 19.6706 13.4607 18.1824 14.1637C18.0573 14.2229 17.9263 14.27 17.798 14.3226C17.7994 14.3419 17.8008 14.3612 17.8021 14.3808C18.19 14.4126 18.5773 14.4555 18.9661 14.4744C20.5324 14.5505 22.0979 14.5056 23.6624 14.4224C24.806 14.3616 25.9497 14.2976 27.0919 14.2151C27.84 14.1609 28.5854 14.0711 29.3323 13.9975C29.403 13.9904 29.4744 13.9868 29.5448 13.9769C29.6474 13.9624 29.6996 13.9983 29.7163 14.1033C29.8035 14.6534 29.8971 15.2025 29.9851 15.7525C30.0213 15.9792 30.0117 15.976 29.7626 15.999C29.0608 16.0638 28.3608 16.1475 27.6586 16.2045C26.6914 16.2828 25.723 16.3489 24.7544 16.4098C24.1347 16.4489 23.5137 16.4688 22.8933 16.4994C22.8468 16.5017 22.8014 16.5218 22.7181 16.5433C23.1009 16.7412 23.4475 16.9156 23.7895 17.0982C25.2824 17.8952 26.7759 18.691 28.2647 19.4957C28.5984 19.676 28.9116 19.892 29.2374 20.0863C29.3572 20.1576 29.3598 20.2289 29.28 20.3319C28.932 20.7809 28.5852 21.2306 28.2433 21.6842C28.1642 21.7893 28.0985 21.7673 28.0008 21.712C26.8142 21.0402 25.6342 20.3561 24.4337 19.7086C23.5396 19.2263 22.6309 18.7659 21.7059 18.3435C20.4298 17.7609 19.1325 17.2224 17.8426 16.6687C17.7268 16.619 17.5982 16.5979 17.4612 16.592C20.0863 19.5625 23.0515 22.1679 26.1346 24.6764C25.9094 24.9794 25.6796 25.2896 25.4486 25.5992C25.3075 25.7884 25.1602 25.9735 25.0253 26.1667C24.9496 26.2752 24.8928 26.2934 24.7826 26.1995C23.3866 25.011 21.9834 23.8302 20.5902 22.6382C20.2498 22.3469 19.9392 22.022 19.6144 21.7134C19.5609 21.6626 19.5042 21.6151 19.4488 21.566L19.4046 21.5906C19.4682 21.7987 19.5301 22.0073 19.5957 22.2149C20.0373 23.6112 20.4944 25.0031 20.9158 26.4053C21.14 27.151 21.3017 27.9146 21.4955 28.6691C21.5236 28.7788 21.5041 28.8322 21.3807 28.8509C20.8121 28.9371 20.244 29.0273 19.6767 29.1203C19.5264 29.1448 19.4698 29.1021 19.4313 28.9457C19.2637 28.2631 19.0901 27.5808 18.8889 26.907C18.4722 25.5108 18.0654 24.1109 17.5997 22.7302C17.2047 21.5602 16.7382 20.4129 16.2917 19.2599C16.1339 18.8524 15.9422 18.4573 15.7643 18.0572C15.7396 18.0015 15.7059 17.9495 15.6765 17.896C15.6569 17.8994 15.6374 17.9028 15.6178 17.9064L15.6174 17.9075Z" fill="#10551F"/>
-                          </g>
-                          <defs>
-                          <clipPath id="clip0_1_8482">
-                          <rect width="30" height="30" fill="white"/>
-                          </clipPath>
-                          </defs>
-                      </svg>
-                    </div>
-                    <div class="content">
-                      <h4 class="title">High-Quality Materials</h4>
-                      <div class="text">It is a long established fact that a reader will be distracted by the readable</div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_1_848)">
-                          <path d="M15.6174 17.9075C15.5927 18.2781 15.5461 18.6489 15.5475 19.0195C15.553 20.6083 15.5403 22.1983 15.5969 23.7857C15.646 25.1704 15.7744 26.5527 15.8772 27.9355C15.9171 28.4718 15.9811 29.0065 16.0379 29.5416C16.0496 29.6513 16.0372 29.7162 15.9003 29.7349C15.3177 29.8144 14.7362 29.9016 14.1558 29.9944C14.0414 30.0127 14.0087 29.9881 13.9997 29.8774C13.8958 28.6222 13.773 27.3682 13.685 26.112C13.6101 25.045 13.5743 23.9752 13.5204 22.9068C13.5186 22.8709 13.5079 22.8357 13.4575 22.7888C13.2662 23.1699 13.0831 23.5552 12.8822 23.9313C12.1993 25.2099 11.5166 26.4884 10.8205 27.76C10.5459 28.2614 10.2392 28.7464 9.93831 29.2336C9.91198 29.2763 9.7937 29.3174 9.76285 29.2964C9.23731 28.9389 8.71877 28.5717 8.19919 28.2057C8.18993 28.1992 8.18705 28.1841 8.18726 28.1845C10.2104 24.7641 12.0259 21.2542 13.4739 17.5702C13.4536 17.5517 13.433 17.5332 13.4126 17.5147C13.3227 17.5735 13.2213 17.6208 13.1446 17.6931C12.3992 18.3961 11.6371 19.0836 10.9199 19.8131C9.19576 21.5668 7.58849 23.4218 6.02545 25.3137C5.85452 25.5205 5.67372 25.7204 5.51678 25.9368C5.41619 26.0753 5.33618 26.0989 5.19076 25.9964C4.80262 25.7226 4.40522 25.4613 4.01092 25.1958C3.90005 25.1211 3.78753 25.0486 3.65877 24.9639C5.1634 23.055 6.78465 21.2497 8.39727 19.4375C6.00447 20.165 3.65466 20.9784 1.20385 21.5259C1.14749 21.1567 1.10142 20.8272 1.04609 20.499C0.998779 20.2182 0.942831 19.9388 0.887501 19.6593C0.871457 19.5778 0.861995 19.525 0.974508 19.4926C2.63711 19.0137 4.29909 18.5323 5.95881 18.0446C7.68867 17.536 9.3778 16.9182 11.0291 16.2017C11.4117 16.0358 11.7961 15.8741 12.1834 15.6664C12.1096 15.6467 12.0366 15.613 11.9619 15.6096C11.2835 15.5774 10.6045 15.5188 9.92679 15.5285C8.30286 15.5516 6.6777 15.577 5.05624 15.6593C3.59686 15.7336 2.14139 15.882 0.684895 16.0044C0.32144 16.035 0.316914 16.0479 0.255824 15.7072C0.16676 15.2092 0.0861293 14.7095 0.00385297 14.21C-0.00416897 14.1617 0.00282452 14.111 0.00282452 14.0426C2.40776 13.7351 4.82442 13.6168 7.24149 13.5032L7.25054 13.4473C7.13844 13.3969 7.02305 13.3524 6.91465 13.2953C5.53632 12.5703 4.15325 11.8534 2.78376 11.1128C2.11095 10.749 1.46364 10.3401 0.804607 9.95177C0.693534 9.88634 0.615577 9.8191 0.719863 9.682C1.07488 9.21475 1.42476 8.74366 1.77711 8.27439C1.79213 8.25446 1.81105 8.23755 1.83203 8.215C5.26501 10.2217 8.76258 12.0962 12.4996 13.5056C12.5129 13.4915 12.5261 13.4773 12.5395 13.4632C12.384 13.2689 12.2353 13.0694 12.0721 12.8816C10.9639 11.605 9.74393 10.4357 8.47523 9.31359C8.16319 9.03759 7.86865 8.74266 7.55353 8.47027C6.70012 7.73244 5.84115 7.00065 4.98219 6.26926C4.65041 5.98661 4.30958 5.71403 3.98027 5.42896C3.94077 5.39474 3.91239 5.28562 3.93707 5.252C4.30834 4.74347 4.68928 4.24159 5.08544 3.71494C7.01421 5.20328 8.76196 6.84664 10.6004 8.40666C10.5819 8.35029 10.563 8.29392 10.5449 8.23735C10.1958 7.145 9.82826 6.05768 9.50286 4.95848C9.15421 3.78057 8.84629 2.59118 8.51719 1.40784C8.47646 1.26168 8.49024 1.20088 8.67207 1.17592C9.22291 1.10022 9.77087 1.00218 10.3176 0.900919C10.4813 0.87052 10.5402 0.908166 10.5834 1.07123C10.9131 2.31417 11.2397 3.55832 11.5972 4.7938C12.1647 6.75545 12.8787 8.66978 13.6142 10.5757C13.8059 11.0725 14.0459 11.5514 14.2646 12.0382C14.2739 12.059 14.2932 12.0753 14.3491 12.1459C14.3751 11.9694 14.4067 11.8448 14.4094 11.7195C14.4318 10.6499 14.4723 9.58014 14.4612 8.51074C14.4501 7.43489 14.4022 6.35885 14.3409 5.28442C14.2796 4.20998 14.186 3.13716 14.0986 2.06434C14.0538 1.51554 13.9935 0.967757 13.9351 0.419971C13.9244 0.320721 13.9557 0.287302 14.0546 0.272606C14.5914 0.193085 15.1273 0.107525 15.6633 0.0223676C15.9706 -0.0263514 15.9836 -0.0199092 16.0082 0.276632C16.1596 2.09353 16.3127 3.91042 16.4581 5.72772C16.491 6.1378 16.4951 6.5501 16.5134 6.96139C16.5173 7.04635 16.5262 7.13111 16.5365 7.26176C16.7142 6.91328 16.8625 6.60909 17.0225 6.31073C17.8492 4.76944 18.6756 3.22836 19.5099 1.69109C19.6671 1.4016 19.8721 1.13706 20.0303 0.847972C20.1206 0.683093 20.198 0.698393 20.3271 0.789792C20.7153 1.06399 21.1083 1.33134 21.4992 1.60191C21.6094 1.67821 21.7186 1.75632 21.8172 1.82597C19.8092 5.25965 17.9366 8.74789 16.5864 12.5035C16.6564 12.4578 16.7356 12.4215 16.7952 12.3654C17.5958 11.6096 18.4307 10.8845 19.1839 10.0858C20.416 8.7795 21.6039 7.43268 22.7921 6.08727C23.3794 5.42232 23.928 4.72435 24.4887 4.03705C24.586 3.91767 24.6485 3.88163 24.7956 3.98994C25.2907 4.35453 25.8008 4.69918 26.3228 5.06377C24.7875 6.9626 23.2342 8.81352 21.582 10.6057C21.6528 10.592 21.726 10.5855 21.7939 10.5632C22.634 10.288 23.4693 9.99888 24.3136 9.73737C25.0899 9.49679 25.874 9.28018 26.6573 9.06215C27.3101 8.88036 27.9671 8.71326 28.6212 8.5357C28.7382 8.50389 28.8047 8.51899 28.8267 8.65005C28.9207 9.21193 29.0169 9.77361 29.1188 10.3343C29.1437 10.471 29.0949 10.5277 28.9612 10.5606C28.4408 10.6886 27.9175 10.809 27.4049 10.9626C25.8598 11.4256 24.3083 11.8715 22.7798 12.3833C21.2202 12.9053 19.6706 13.4607 18.1824 14.1637C18.0573 14.2229 17.9263 14.27 17.798 14.3226C17.7994 14.3419 17.8008 14.3612 17.8021 14.3808C18.19 14.4126 18.5773 14.4555 18.9661 14.4744C20.5324 14.5505 22.0979 14.5056 23.6624 14.4224C24.806 14.3616 25.9497 14.2976 27.0919 14.2151C27.84 14.1609 28.5854 14.0711 29.3323 13.9975C29.403 13.9904 29.4744 13.9868 29.5448 13.9769C29.6474 13.9624 29.6996 13.9983 29.7163 14.1033C29.8035 14.6534 29.8971 15.2025 29.9851 15.7525C30.0213 15.9792 30.0117 15.976 29.7626 15.999C29.0608 16.0638 28.3608 16.1475 27.6586 16.2045C26.6914 16.2828 25.723 16.3489 24.7544 16.4098C24.1347 16.4489 23.5137 16.4688 22.8933 16.4994C22.8468 16.5017 22.8014 16.5218 22.7181 16.5433C23.1009 16.7412 23.4475 16.9156 23.7895 17.0982C25.2824 17.8952 26.7759 18.691 28.2647 19.4957C28.5984 19.676 28.9116 19.892 29.2374 20.0863C29.3572 20.1576 29.3598 20.2289 29.28 20.3319C28.932 20.7809 28.5852 21.2306 28.2433 21.6842C28.1642 21.7893 28.0985 21.7673 28.0008 21.712C26.8142 21.0402 25.6342 20.3561 24.4337 19.7086C23.5396 19.2263 22.6309 18.7659 21.7059 18.3435C20.4298 17.7609 19.1325 17.2224 17.8426 16.6687C17.7268 16.619 17.5982 16.5979 17.4612 16.592C20.0863 19.5625 23.0515 22.1679 26.1346 24.6764C25.9094 24.9794 25.6796 25.2896 25.4486 25.5992C25.3075 25.7884 25.1602 25.9735 25.0253 26.1667C24.9496 26.2752 24.8928 26.2934 24.7826 26.1995C23.3866 25.011 21.9834 23.8302 20.5902 22.6382C20.2498 22.3469 19.9392 22.022 19.6144 21.7134C19.5609 21.6626 19.5042 21.6151 19.4488 21.566L19.4046 21.5906C19.4682 21.7987 19.5301 22.0073 19.5957 22.2149C20.0373 23.6112 20.4944 25.0031 20.9158 26.4053C21.14 27.151 21.3017 27.9146 21.4955 28.6691C21.5236 28.7788 21.5041 28.8322 21.3807 28.8509C20.8121 28.9371 20.244 29.0273 19.6767 29.1203C19.5264 29.1448 19.4698 29.1021 19.4313 28.9457C19.2637 28.2631 19.0901 27.5808 18.8889 26.907C18.4722 25.5108 18.0654 24.1109 17.5997 22.7302C17.2047 21.5602 16.7382 20.4129 16.2917 19.2599C16.1339 18.8524 15.9422 18.4573 15.7643 18.0572C15.7396 18.0015 15.7059 17.9495 15.6765 17.896C15.6569 17.8994 15.6374 17.9028 15.6178 17.9064L15.6174 17.9075Z" fill="#10551F"/>
-                          </g>
-                          <defs>
-                          <clipPath id="clip0_1_8483">
-                          <rect width="30" height="30" fill="white"/>
-                          </clipPath>
-                          </defs>
-                      </svg>
-                    </div>
-                    <div class="content">
-                      <h4 class="title">Reliable & On-Time Service</h4>
-                      <div class="text">It is a long established fact that a reader will be distracted by the readable</div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </section>
 
-        <!-- Experience Speaks Section Start -->
-        <section class="experience-speaks-section fix">
-          <div class="container">
-            <p class="experience-text char-animation">Our Experience Speaks for Itself</p>
-            <div class="experience-speaks-wrapper wow fadeInUp" data-wow-delay=".3s">
-              <div class="experience-speaks-card-items">
-                <p>Beautiful Lawns <br> Designed</p>
-                <h3 class="count-box"><span class="count-text" data-speed="3000" data-stop="350">0</span>+</h3>
-              </div>
-              <div class="line-shape">
-                <img src="images/icons/line-1-2.png" alt="">
-              </div>
-              <div class="experience-speaks-card-items">
-                <h3 class="count-box style-2"><span class="count-text" data-speed="3000" data-stop="98">0</span>%</h3>
-                <p>Customer <br> Satisfaction Rate</p>
-              </div>
-              <div class="line-shape">
-                <img src="images/icons/line-1-2.png" alt="">
-              </div>
-              <div class="experience-speaks-card-items">
-                <p>Average <br> Customer Rating</p>
-                <h3 class="count-box"><span class="count-text" data-speed="3000" data-stop="4.9">0</span>/5</h3>
-              </div>
-              <div class="line-shape">
-                <img src="images/icons/line-1-2.png" alt="">
-              </div>
-              <div class="experience-speaks-card-items">
-                <h3 class="count-box style-2"><span class="count-text" data-speed="3000" data-stop="80">0</span>+</h3>
-                <p>Lawn & Turf <br> Maintenance Jobs</p>
-              </div>
-            </div>
-          </div>
+        <!-- Cta Banner Section Start -->
+        <section class="cta-banner-section-2 pb-0 fix">
+          
         </section>
 
-        
         <!-- Project Section Start -->
-        <section class="project-section fix section-padding">
-            <div class="container">
-                <div class="section-title text-center">
-                    <span class="sub-title">Our Clients</span>
-                    <h2 class="title">Trusted by Industry Leaders</h2>
-                </div>
-                <div class="row g-4">
+        
 
-                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                  <div class="project-thumb1">
-                    <img src="images/resource/service-details.jpeg" alt="">
-                    <img src="images/resource/service-details.jpeg" alt="">
-                    <div class="content">
-                        <h4 class="title">
-                          <a href="page-project-details.html">St. Jude India ChildCare Centres</a>
-                        </h4>
-                        <ul>
-                            <li>
-                                <a href="page-project-details.html">Client</a>
-                            </li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                  <div class="project-thumb1">
-                    <img src="images/resource/service-d1.jpeg" alt="">
-                    <img src="images/resource/service-d1.jpeg" alt="">
-                    <div class="content">
-                        <h4 class="title">
-                          <a href="page-project-details.html">BPCL Sports Club, Chembur</a>
-                        </h4>
-                        <ul>
-                            <li>
-                                <a href="page-project-details.html">Client</a>
-                            </li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                  <div class="project-thumb1">
-                    <img src="images/resource/service-d2.jpeg" alt="">
-                    <img src="images/resource/service-d2.jpeg" alt="">
-                    <div class="content">
-                        <h4 class="title">
-                          <a href="page-project-details.html">BPCL Staff Quarters, Azad Nagar, Chembur</a>
-                        </h4>
-                        <ul>
-                            <li>
-                                <a href="page-project-details.html">Client</a>
-                            </li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                  <div class="project-thumb1">
-                    <img src="images/resource/service-details.jpeg" alt="">
-                    <img src="images/resource/service-details.jpeg" alt="">
-                    <div class="content">
-                        <h4 class="title">
-                          <a href="page-project-details.html">BPCL Refinery, Mahulgaon, Chembur</a>
-                        </h4>
-                        <ul>
-                            <li>
-                                <a href="page-project-details.html">Client</a>
-                            </li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                  <div class="project-thumb1">
-                    <img src="images/resource/service-details.jpeg" alt="">
-                    <img src="images/resource/service-details.jpeg" alt="">
-                    <div class="content">
-                        <h4 class="title">
-                          <a href="page-project-details.html">Sabari Palm View Society, Panvel</a>
-                        </h4>
-                        <ul>
-                            <li>
-                                <a href="page-project-details.html">Client</a>
-                            </li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                  <div class="project-thumb1">
-                    <img src="images/resource/service-d1.jpeg" alt="">
-                    <img src="images/resource/service-d1.jpeg" alt="">
-                    <div class="content">
-                        <h4 class="title">
-                          <a href="page-project-details.html">Godrej & Boyce Mfg. Co. Ltd., Vikhroli</a>
-                        </h4>
-                        <ul>
-                            <li>
-                                <a href="page-project-details.html">Client</a>
-                            </li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                  <div class="project-thumb1">
-                    <img src="images/resource/service-d2.jpeg" alt="">
-                    <img src="images/resource/service-d2.jpeg" alt="">
-                    <div class="content">
-                        <h4 class="title">
-                          <a href="page-project-details.html">Grauer & Weil (India) Ltd., Vasai</a>
-                        </h4>
-                        <ul>
-                            <li>
-                                <a href="page-project-details.html">Client</a>
-                            </li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                  <div class="project-thumb1">
-                    <img src="images/resource/service-details.jpeg" alt="">
-                    <img src="images/resource/service-details.jpeg" alt="">
-                    <div class="content">
-                        <h4 class="title">
-                          <a href="page-project-details.html">World Vision India, Chennai</a>
-                        </h4>
-                        <ul>
-                            <li>
-                                <a href="page-project-details.html">Client</a>
-                            </li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                  <div class="project-thumb1">
-                    <img src="images/resource/service-details.jpeg" alt="">
-                    <img src="images/resource/service-details.jpeg" alt="">
-                    <div class="content">
-                        <h4 class="title">
-                          <a href="page-project-details.html">Tapovana – The Fern, Sakleshpur</a>
-                        </h4>
-                        <ul>
-                            <li>
-                                <a href="page-project-details.html">Client</a>
-                            </li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-                </div>
-            </div>
-        </section>
+        <!-- Faq Section Start -->
+        
 
-
-        <!-- How It Section Start -->
-        <section class="how-it-work-section fix section-padding pt-0">
+        <!-- Brand Section Start -->
+        <div class="brand-section section-padding pb-0">
           <div class="container">
-              <div class="row g-4">
-                <div class="col-xl-6 col-lg-6">
-                  <div class="single-how-it-work-items">
-                      <div class="sec-title mb-0">
-                        <div class="sec-sub-title">
-                          <h6 class="sub-title tz-sub-tilte tz-sub-anim tx-subTitle">How It Works</h6>
-                        </div>
-                          <h2 class="title tx-title sec_title  tz-itm-title tz-itm-anim">
-                         How We Bring Your Landscape Vision to Life
-                          </h2>
-                      </div>
-                      <p class="text wow fadeInUp" data-wow-delay=".3s">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it 
-                      </p>
-                      <div class="how-it-box-items wow fadeInUp" data-wow-delay=".5s">
-                          <div class="thumb">
-                            <img src="images/resource/how-it-1-1.jpg" alt="">
-                          </div>
-                          <div class="how-it-box">
-                            <img src="images/resource/tree1-1.png" alt="">
-                          </div>
-                          <div class="how-it-box2">
-                            <img src="images/resource/tree1-2.png" alt="">
-                          </div>
+            <div class="brand-text-2">
+               <h4 class="brand-title tx-title sec_title  tz-itm-title tz-itm-anim">
+                  Trusted By Leading Brands
+                </h4>
+                <div class="line"></div>
+            </div>
+             
+              <div class="swiper brand-slider wow fadeInUp">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                     <div class="brand-box-1" style="padding: 10px; border: 1px solid #eaeaea; border-radius: 8px; height: 120px; display: flex; align-items: center; justify-content: center; background: white; margin: 0 10px; text-align: center;">
+                        <h5 style="margin: 0; color: #2e3d34; font-weight: 600; font-size: 15px; line-height: 1.4;">St. Jude India ChildCare Centres</h5>
                       </div>
                   </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                   <div class="how-it-faq-1">
-                      <ul class="accordion-box">
-                          <!--Block-->
-                          <li class="accordion block active-block wow fadeInUp">
-                              <div class="acc-btn active">
-                                  <h4 class="title">
-                                    <span class="number">01</span>
-                                    Share Your Idea
-                                  </h4>
-                                  <div class="icon fa-regular fa-plus"></div>
-                              </div>
-                              <div class="acc-content current">
-                                  <div class="content">
-                                      <div class="text">
-                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less  will be distracted by the readable content of a page when looking at its layout.
-                                      </div>
-                                  </div>
-                              </div>
-                          </li>
-                          <!--Block-->
-                          <li class="accordion block wow fadeInUp" data-wow-delay=".2s">
-                              <div class="acc-btn">
-                                 <h4 class="title">
-                                    <span class="number">02</span>
-                                   Get a Custom Plan
-                                  </h4>
-                                  <div class="icon fa-regular fa-plus"></div>
-                              </div>
-                              <div class="acc-content">
-                                  <div class="content">
-                                  <div class="text">
-                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less  will be distracted by the readable content of a page when looking at its layout.
-                                      </div>
-                                  </div>
-                              </div>
-                          </li>
-                          <!--Block-->
-                          <li class="accordion block wow fadeInUp" data-wow-delay=".4s">
-                              <div class="acc-btn">
-                                 <h4 class="title">
-                                    <span class="number">03</span>
-                                    We Start the Work
-                                  </h4>
-                                  <div class="icon fa-regular fa-plus"></div>
-                              </div>
-                              <div class="acc-content">
-                                  <div class="content">
-                                  <div class="text">
-                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less  will be distracted by the readable content of a page when looking at its layout.
-                                      </div>
-                                  </div>
-                              </div>
-                          </li>
-                          <!--Block-->
-                          <li class="accordion block wow fadeInUp" data-wow-delay=".6s">
-                              <div class="acc-btn">
-                                 <h4 class="title">
-                                    <span class="number">04</span>
-                                    Enjoy Your New Space
-                                  </h4>
-                                  <div class="icon fa-regular fa-plus"></div>
-                              </div>
-                              <div class="acc-content">
-                                  <div class="content">
-                                  <div class="text">
-                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less  will be distracted by the readable content of a page when looking at its layout.
-                                      </div>
-                                  </div>
-                              </div>
-                          </li>
-                         
-                      </ul>
-                   </div>
-                </div>
+    
+                  <div class="swiper-slide">
+                     <div class="brand-box-1" style="padding: 10px; border: 1px solid #eaeaea; border-radius: 8px; height: 120px; display: flex; align-items: center; justify-content: center; background: white; margin: 0 10px; text-align: center;">
+                        <h5 style="margin: 0; color: #2e3d34; font-weight: 600; font-size: 15px; line-height: 1.4;">BPCL Sports Club, Chembur</h5>
+                      </div>
+                  </div>
+    
+                  <div class="swiper-slide">
+                     <div class="brand-box-1" style="padding: 10px; border: 1px solid #eaeaea; border-radius: 8px; height: 120px; display: flex; align-items: center; justify-content: center; background: white; margin: 0 10px; text-align: center;">
+                        <h5 style="margin: 0; color: #2e3d34; font-weight: 600; font-size: 15px; line-height: 1.4;">BPCL Staff Quarters, Azad Nagar, Chembur</h5>
+                      </div>
+                  </div>
+    
+                  <div class="swiper-slide">
+                     <div class="brand-box-1" style="padding: 10px; border: 1px solid #eaeaea; border-radius: 8px; height: 120px; display: flex; align-items: center; justify-content: center; background: white; margin: 0 10px; text-align: center;">
+                        <h5 style="margin: 0; color: #2e3d34; font-weight: 600; font-size: 15px; line-height: 1.4;">BPCL Refinery, Mahulgaon, Chembur</h5>
+                      </div>
+                  </div>
+    
+                  <div class="swiper-slide">
+                     <div class="brand-box-1" style="padding: 10px; border: 1px solid #eaeaea; border-radius: 8px; height: 120px; display: flex; align-items: center; justify-content: center; background: white; margin: 0 10px; text-align: center;">
+                        <h5 style="margin: 0; color: #2e3d34; font-weight: 600; font-size: 15px; line-height: 1.4;">Sabari Palm View Society, Panvel</h5>
+                      </div>
+                  </div>
+    
+                  <div class="swiper-slide">
+                     <div class="brand-box-1" style="padding: 10px; border: 1px solid #eaeaea; border-radius: 8px; height: 120px; display: flex; align-items: center; justify-content: center; background: white; margin: 0 10px; text-align: center;">
+                        <h5 style="margin: 0; color: #2e3d34; font-weight: 600; font-size: 15px; line-height: 1.4;">Godrej & Boyce Mfg. Co. Ltd., Vikhroli</h5>
+                      </div>
+                  </div>
+    
+                  <div class="swiper-slide">
+                     <div class="brand-box-1" style="padding: 10px; border: 1px solid #eaeaea; border-radius: 8px; height: 120px; display: flex; align-items: center; justify-content: center; background: white; margin: 0 10px; text-align: center;">
+                        <h5 style="margin: 0; color: #2e3d34; font-weight: 600; font-size: 15px; line-height: 1.4;">Grauer & Weil (India) Ltd., Vasai</h5>
+                      </div>
+                  </div>
+    
+                  <div class="swiper-slide">
+                     <div class="brand-box-1" style="padding: 10px; border: 1px solid #eaeaea; border-radius: 8px; height: 120px; display: flex; align-items: center; justify-content: center; background: white; margin: 0 10px; text-align: center;">
+                        <h5 style="margin: 0; color: #2e3d34; font-weight: 600; font-size: 15px; line-height: 1.4;">World Vision India, Chennai</h5>
+                      </div>
+                  </div>
+    
+                  <div class="swiper-slide">
+                     <div class="brand-box-1" style="padding: 10px; border: 1px solid #eaeaea; border-radius: 8px; height: 120px; display: flex; align-items: center; justify-content: center; background: white; margin: 0 10px; text-align: center;">
+                        <h5 style="margin: 0; color: #2e3d34; font-weight: 600; font-size: 15px; line-height: 1.4;">Tapovana - The Fern, Sakleshpur</h5>
+                      </div>
+                  </div>
+    
               </div>
+      </div>
           </div>
-        </section>
+        </div>
 
         <!-- Testimonial Section Start -->
-        <section class="testimonial-section section-padding fix bg-cover" style="background-image: url('images/background/testimonial-bg-1-1.jpg');">
+        <section class="testimonial-section fix section-padding">
           <div class="container">
-              <div class="row g-4">
-                <div class="col-xl-4 col-lg-8">
-                  <div class="testimonial-left-items-1">
-                      <div class="sec-title">
+            <div class="row g-4">
+                <div class="col-xl-7 col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                  <div class="testimonial-block-content2">
+                      <div class="sec-title mb-0">
                         <div class="sec-sub-title">
-                          <h6 class="sub-title tz-sub-tilte tz-sub-anim tx-subTitle text-white">Testimonial</h6>
+                          <h6 class="sub-title tz-sub-tilte tz-sub-anim tx-subTitle">Testimonial</h6>
                         </div>
-                          <h2 class="title tx-title sec_title  tz-itm-title tz-itm-anim text-white">
-                          The Best Customers Says About Our Action
+                          <h2 class="title tx-title sec_title  tz-itm-title tz-itm-anim">
+                              The Best Customers <span class="d-xxl-block">Says About Our Action</span> 
                           </h2>
                       </div>
-                      <a class="theme-btn-main wow fadeInUp" data-wow-delay=".3s" href="page-testimonial.html">
-                        <span class="theme-btn-arrow-left"> <i class="fa-solid fa-arrow-right"></i> </span>
-                        <span class="theme-btn">Read All Testimonial</span>
-                        <span class="theme-btn-arrow-right"> <i class="fa-solid fa-arrow-right"></i> </span>
-                      </a>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="ratting-box-items">
-                        <div class="rating">
-                          <h3 class="num">4.8</h3>
-                          <div class="star">
-                            <i class="fa-solid fa-star-sharp"></i>
-                            <i class="fa-solid fa-star-sharp"></i>
-                            <i class="fa-solid fa-star-sharp"></i>
-                            <i class="fa-solid fa-star-sharp"></i>
-                            <i class="fa-solid fa-star-sharp"></i>
-                          </div>
-                          <p>From 3k Members, <br> Reviewed by Google</p>
-                        </div>
-                        <div class="client-image">
-                            <img src="images/resource/client2-1.jpg" alt="img" class="icon-1">
-                            <img src="images/resource/client2-2.jpg" alt="img" class="icon-2">
-                            <img src="images/resource/client2-3.jpg" alt="img" class="icon-3">
-                            <img src="images/resource/client2-4.jpg" alt="img" class="icon-4">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-5 col-lg-6 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="tetsimonial-right-items">
-                        <div class="swiper testimonial-slider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="testi-slider-block">
-                                <div class="quote-icon">
-                                  <img src="images/icons/quote1-1.png" alt="">
-                                </div>
-                                <div class="star">
-                                  <i class="fa-solid fa-star"></i>
-                                  <i class="fa-solid fa-star"></i>
-                                  <i class="fa-solid fa-star"></i>
-                                  <i class="fa-solid fa-star"></i>
-                                  <i class="fa-solid fa-star"></i>
-                                </div>
-                                <div class="text">They improved our lawn beautifully. The turfing looks fresh, even, and very professionally done. The  team worked with care and kept us updated throughout the process. We’re really happy with the final result.</div>
-                                <div class="client-info">
-                                    <div class="client-img">
-                                        <img src="images/resource/testi-2-1.jpg" alt="">
-                                    </div>
-                                    <div class="info-content">
-                                      <h5 class="name">Emily Carter</h5>
-                                      <span>Senior Project Manager</span>
-                                    </div>
-                                </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testi-slider-block">
-                                      <div class="quote-icon">
-                                        <img src="images/icons/quote1-1.png" alt="">
+                      <div class="swiper testimonial-slider">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                              <div class="testi-slider-block-2">
+                                  <div class="quote-icon">
+                                    <img src="images/icons/quote.png" alt="">
+                                  </div>
+                                  <div class="text">Flora Landscape Developers transformed our society's garden beautifully. The turfing looks fresh, even, and very professionally done. Their team worked with care and kept us updated throughout the process. We are really happy with the final result.</div>
+                                  <div class="client-info">
+                                      <div class="client-img">
+                                          <img src="images/resource/flora-custom-8.jpeg" alt="" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
                                       </div>
-                                      <div class="star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                                      <div class="info-content">
+                                        <h5 class="name">Amit Sharma</h5>
+                                        <span>Mumbai</span>
                                       </div>
-                                      <div class="text">They improved our lawn beautifully. The turfing looks fresh, even, and very professionally done. The  team worked with care and kept us updated throughout the process. We’re really happy with the final result.</div>
-                                      <div class="client-info">
-                                          <div class="client-img">
-                                              <img src="images/resource/testi-2-1.jpg" alt="">
-                                          </div>
-                                          <div class="info-content">
-                                            <h5 class="name">Emily Carter</h5>
-                                            <span>Senior Project Manager</span>
-                                          </div>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testi-slider-block">
-                                      <div class="quote-icon">
-                                        <img src="images/icons/quote1-1.png" alt="">
-                                      </div>
-                                      <div class="star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                      </div>
-                                      <div class="text">They improved our lawn beautifully. The turfing looks fresh, even, and very professionally done. The  team worked with care and kept us updated throughout the process. We’re really happy with the final result.</div>
-                                      <div class="client-info">
-                                          <div class="client-img">
-                                              <img src="images/resource/testi-2-1.jpg" alt="">
-                                          </div>
-                                          <div class="info-content">
-                                            <h5 class="name">Emily Carter</h5>
-                                            <span>Senior Project Manager</span>
-                                          </div>
-                                      </div>
-                                    </div>
+                                  </div>
                                 </div>
                             </div>
-                        </div>
-                         <div class="array-button">
+    
+                            <div class="swiper-slide">
+                              <div class="testi-slider-block-2">
+                                  <div class="quote-icon">
+                                    <img src="images/icons/quote.png" alt="">
+                                  </div>
+                                  <div class="text">Exceptional service! They designed a stunning landscape for our new corporate office. The irrigation system they installed is highly efficient and the plant selection perfectly suits our climate. Highly recommended.</div>
+                                  <div class="client-info">
+                                      <div class="client-img">
+                                          <img src="images/resource/flora-custom-8.jpeg" alt="" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
+                                      </div>
+                                      <div class="info-content">
+                                        <h5 class="name">Priya Desai</h5>
+                                        <span>Pune</span>
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                              <div class="testi-slider-block-2">
+                                  <div class="quote-icon">
+                                    <img src="images/icons/quote.png" alt="">
+                                  </div>
+                                  <div class="text">Very professional team. We hired them for a complete lawn renovation and they delivered beyond our expectations. The attention to detail and dedication of the staff is commendable.</div>
+                                  <div class="client-info">
+                                      <div class="client-img">
+                                          <img src="images/resource/flora-custom-8.jpeg" alt="" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
+                                      </div>
+                                      <div class="info-content">
+                                        <h5 class="name">Rajesh Kumar</h5>
+                                        <span>Delhi</span>
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+    
+</div>
+                      </div>
+                      <div class="array-button">
                           <button class="array-prev">
                               <i class="far fa-chevron-left"></i>
                           </button>
@@ -1070,599 +614,42 @@
                               <i class="far fa-chevron-right"></i>
                           </button>
                       </div>
-                    </div>
+                  </div>
                 </div>
-              </div>
-          </div>
-        </section>
-
-        <!-- Faq Section Start -->
-        <section class="faq-section section-padding section-bg fix">
-          <div class="leaf-shape1 float-bob-y">
-            <img src="images/icons/leaf1-1.png" alt="">
-          </div>
-          <div class="leaf-shape2 float-bob-y">
-            <img src="images/icons/leaf1-2.png" alt="">
-          </div>
-          <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="sec-title text-center mb-20">
-                      <div class="sec-sub-title bg-white">
-                        <h6 class="sub-title tz-sub-tilte tz-sub-anim tx-subTitle">FAQS</h6>
+                <div class="col-xl-5 col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+                  <div class="tetsimonial-image-items">
+                      <div class="thumb fix">
+                        <img data-speed=".8" src="images/resource/indian-landscaper.png" alt="">
                       </div>
-                        <h2 class="title tx-title sec_title  tz-itm-title tz-itm-anim">
-                         Your Most Important Questions Answered Here
-                        </h2>
-                    </div>
-                </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-lg-10">
-                   <div class="faq-content-1">
-                      <ul class="accordion-box">
-                          <!--Block-->
-                          <li class="accordion block wow fadeInUp">
-                              <div class="acc-btn">
-                                  How long does turf installation take?
-                                  <div class="icon fa-regular fa-plus"></div>
+                      <div class="testi-ratting">
+                          <div class="rattings">
+                              <h2 class="ratting-count">
+                                4.8
+                              </h2>
+                              <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                               </div>
-                              <div class="acc-content">
-                                  <div class="content">
-                                      <div class="text">
-                                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
-                                      </div>
-                                  </div>
-                              </div>
-                          </li>
-                          <!--Block-->
-                          <li class="accordion block active-block wow fadeInUp" data-wow-delay=".2s">
-                              <div class="acc-btn active">
-                                  What type of turf is best for my property?
-                                 <div class="icon fa-regular fa-plus"></div>
-                              </div>
-                              <div class="acc-content current">
-                                  <div class="content">
-                                  <div class="text">
-                                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
-                                      </div>
-                                  </div>
-                              </div>
-                          </li>
-                          <!--Block-->
-                          <li class="accordion block wow fadeInUp" data-wow-delay=".4s">
-                              <div class="acc-btn">
-                                  Do you offer maintenance after installation?
-                                <div class="icon fa-regular fa-plus"></div>
-                              </div>
-                              <div class="acc-content">
-                                  <div class="content">
-                                      <div class="text">
-                                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
-                                      </div>
-                                  </div>
-                              </div>
-                          </li>
-                          <!--Block-->
-                          <li class="accordion block wow fadeInUp" data-wow-delay=".6s">
-                              <div class="acc-btn">
-                                  How often should I maintain my lawn?
-                                 <div class="icon fa-regular fa-plus"></div>
-                              </div>
-                              <div class="acc-content">
-                                  <div class="content">
-                                      <div class="text">
-                                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
-                                      </div>
-                                  </div>
-                              </div>
-                          </li>
-                          <!--Block-->
-                          <li class="accordion block wow fadeInUp" data-wow-delay=".8s">
-                              <div class="acc-btn">
-                                   Is your service suitable for both homes and businesses?
-                                 <div class="icon fa-regular fa-plus"></div>
-                              </div>
-                              <div class="acc-content">
-                                  <div class="content">
-                                      <div class="text">
-                                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
-                                      </div>
-                                  </div>
-                              </div>
-                          </li>
-                      </ul>
-                   </div>
-                </div>
-              </div>
-          </div>
-        </section>
-
-        <!-- Benefit Section Start -->
-        <section class="benefit-section fix section-padding pb-110">
-            <div class="container">
-                <div class="row g-4 align-items-end mb-30">
-                    <div class="col-xl-7 col-lg-7">
-                      <div class="sec-title mb-0">
-                        <div class="sec-sub-title">
-                          <h6 class="sub-title tz-sub-tilte tz-sub-anim tx-subTitle">Our Benefits</h6>
-                        </div>
-                          <h2 class="title tx-title sec_title  tz-itm-title tz-itm-anim">
-                          Experience a Greener, Cleaner Outdoor Space Effortlessly
-                          </h2>
+                          </div>
+                          <div class="testi-line"></div>
+                          <p>
+                            From 3k Members, <br>
+                            Reviewed by Google
+                          </p>
                       </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-5 wow fadeInUp">
-                        <p class="mb-2">
-                          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less 
-                        </p>
-                    </div>
-                </div>
-                <div class="benefit-image-1">
-                    <img data-speed=".8" src="images/resource/benefit-image-1-1.jpg" alt="">
-                    <ul class="benefit-list-item wow fadeInUp" data-wow-delay=".3s">
-                        <li>
-                            <div class="icon">
-                              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.6174 17.9079C15.5927 18.2785 15.5461 18.6493 15.5475 19.02C15.553 20.6088 15.5403 22.1988 15.5969 23.7862C15.646 25.1708 15.7744 26.5531 15.8772 27.9359C15.9171 28.4722 15.9811 29.0069 16.0379 29.542C16.0496 29.6518 16.0372 29.7166 15.9003 29.7353C15.3177 29.8148 14.7362 29.902 14.1558 29.9948C14.0414 30.0131 14.0087 29.9886 13.9997 29.8778C13.8958 28.6226 13.773 27.3686 13.685 26.1124C13.6101 25.0454 13.5743 23.9756 13.5204 22.9072C13.5186 22.8714 13.5079 22.8361 13.4575 22.7892C13.2662 23.1703 13.0831 23.5557 12.8822 23.9317C12.1993 25.2103 11.5166 26.4889 10.8205 27.7604C10.5459 28.2619 10.2392 28.7468 9.93831 29.234C9.91198 29.2767 9.7937 29.3178 9.76285 29.2968C9.23731 28.9393 8.71877 28.5721 8.19919 28.2061C8.18993 28.1997 8.18705 28.1846 8.18726 28.185C10.2104 24.7646 12.0259 21.2546 13.4739 17.5707C13.4536 17.5522 13.433 17.5336 13.4126 17.5151C13.3227 17.5739 13.2213 17.6212 13.1446 17.6935C12.3992 18.3965 11.6371 19.084 10.9199 19.8136C9.19576 21.5672 7.58849 23.4222 6.02545 25.3142C5.85452 25.5209 5.67372 25.7208 5.51678 25.9372C5.41619 26.0758 5.33618 26.0993 5.19076 25.9968C4.80262 25.723 4.40522 25.4617 4.01092 25.1962C3.90005 25.1215 3.78753 25.049 3.65877 24.9643C5.1634 23.0554 6.78465 21.2502 8.39727 19.4379C6.00447 20.1655 3.65466 20.9788 1.20385 21.5264C1.14749 21.1572 1.10142 20.8276 1.04609 20.4994C0.998779 20.2186 0.942831 19.9392 0.887501 19.6597C0.871457 19.5782 0.861995 19.5255 0.974508 19.4931C2.63711 19.0141 4.29909 18.5328 5.95881 18.045C7.68867 17.5364 9.3778 16.9186 11.0291 16.2021C11.4117 16.0362 11.7961 15.8746 12.1834 15.6668C12.1096 15.6471 12.0366 15.6135 11.9619 15.61C11.2835 15.5778 10.6045 15.5192 9.92679 15.5289C8.30286 15.5521 6.6777 15.5774 5.05624 15.6598C3.59686 15.7341 2.14139 15.8824 0.684895 16.0048C0.32144 16.0354 0.316914 16.0483 0.255824 15.7077C0.16676 15.2096 0.0861293 14.7099 0.00385297 14.2105C-0.00416897 14.1622 0.00282452 14.1114 0.00282452 14.043C2.40776 13.7356 4.82442 13.6172 7.24149 13.5036L7.25054 13.4477C7.13844 13.3974 7.02305 13.3529 6.91465 13.2957C5.53632 12.5707 4.15325 11.8538 2.78376 11.1132C2.11095 10.7494 1.46364 10.3405 0.804607 9.9522C0.693534 9.88677 0.615577 9.81953 0.719863 9.68243C1.07488 9.21517 1.42476 8.74409 1.77711 8.27482C1.79213 8.25489 1.81105 8.23798 1.83203 8.21543C5.26501 10.2222 8.76258 12.0966 12.4996 13.5061C12.5129 13.492 12.5261 13.4777 12.5395 13.4636C12.384 13.2693 12.2353 13.0698 12.0721 12.882C10.9639 11.6054 9.74393 10.4362 8.47523 9.31402C8.16319 9.03801 7.86865 8.74308 7.55353 8.4707C6.70012 7.73287 5.84115 7.00108 4.98219 6.26969C4.65041 5.98704 4.30958 5.71446 3.98027 5.42939C3.94077 5.39517 3.91239 5.28605 3.93707 5.25243C4.30834 4.7439 4.68928 4.24202 5.08544 3.71537C7.01421 5.20371 8.76196 6.84707 10.6004 8.40708C10.5819 8.35071 10.563 8.29435 10.5449 8.23777C10.1958 7.14542 9.82826 6.05811 9.50286 4.95891C9.15421 3.781 8.84629 2.59161 8.51719 1.40826C8.47646 1.26211 8.49024 1.20131 8.67207 1.17635C9.22291 1.10065 9.77087 1.00261 10.3176 0.901346C10.4813 0.870947 10.5402 0.908594 10.5834 1.07166C10.9131 2.3146 11.2397 3.55874 11.5972 4.79423C12.1647 6.75587 12.8787 8.67021 13.6142 10.5761C13.8059 11.0729 14.0459 11.5519 14.2646 12.0387C14.2739 12.0594 14.2932 12.0757 14.3491 12.1464C14.3751 11.9698 14.4067 11.8452 14.4094 11.72C14.4318 10.6504 14.4723 9.58057 14.4612 8.51116C14.4501 7.43532 14.4022 6.35928 14.3409 5.28484C14.2796 4.21041 14.186 3.13759 14.0986 2.06476C14.0538 1.51597 13.9935 0.968184 13.9351 0.420398C13.9244 0.321148 13.9557 0.287729 14.0546 0.273033C14.5914 0.193512 15.1273 0.107952 15.6633 0.0227948C15.9706 -0.0259241 15.9836 -0.0194819 16.0082 0.277059C16.1596 2.09395 16.3127 3.91085 16.4581 5.72815C16.491 6.13823 16.4951 6.55053 16.5134 6.96182C16.5173 7.04678 16.5262 7.13153 16.5365 7.26219C16.7142 6.91371 16.8625 6.60952 17.0225 6.31116C17.8492 4.76987 18.6756 3.22878 19.5099 1.69152C19.6671 1.40202 19.8721 1.13749 20.0303 0.8484C20.1206 0.68352 20.198 0.69882 20.3271 0.790219C20.7153 1.06441 21.1083 1.33176 21.4992 1.60234C21.6094 1.67863 21.7186 1.75675 21.8172 1.8264C19.8092 5.26008 17.9366 8.74832 16.5864 12.5039C16.6564 12.4582 16.7356 12.422 16.7952 12.3658C17.5958 11.6101 18.4307 10.8849 19.1839 10.0863C20.416 8.77992 21.6039 7.43311 22.7921 6.0877C23.3794 5.42275 23.928 4.72478 24.4887 4.03748C24.586 3.9181 24.6485 3.88206 24.7956 3.99037C25.2907 4.35496 25.8008 4.69961 26.3228 5.0642C24.7875 6.96303 23.2342 8.81395 21.582 10.6061C21.6528 10.5924 21.726 10.5859 21.7939 10.5636C22.634 10.2884 23.4693 9.99931 24.3136 9.73779C25.0899 9.49722 25.874 9.2806 26.6573 9.06258C27.3101 8.88078 27.9671 8.71369 28.6212 8.53613C28.7382 8.50432 28.8047 8.51942 28.8267 8.65048C28.9207 9.21236 29.0169 9.77403 29.1188 10.3347C29.1437 10.4714 29.0949 10.5282 28.9612 10.561C28.4408 10.689 27.9175 10.8094 27.4049 10.963C25.8598 11.426 24.3083 11.872 22.7798 12.3837C21.2202 12.9057 19.6706 13.4612 18.1824 14.1642C18.0573 14.2234 17.9263 14.2705 17.798 14.323C17.7994 14.3423 17.8008 14.3617 17.8021 14.3812C18.19 14.413 18.5773 14.4559 18.9661 14.4748C20.5324 14.5509 22.0979 14.506 23.6624 14.4229C24.806 14.3621 25.9497 14.298 27.0919 14.2155C27.84 14.1614 28.5854 14.0716 29.3323 13.9979C29.403 13.9908 29.4744 13.9872 29.5448 13.9774C29.6474 13.9629 29.6996 13.9987 29.7163 14.1038C29.8035 14.6538 29.8971 15.203 29.9851 15.753C30.0213 15.9797 30.0117 15.9764 29.7626 15.9994C29.0608 16.0642 28.3608 16.148 27.6586 16.2049C26.6914 16.2832 25.723 16.3493 24.7544 16.4103C24.1347 16.4493 23.5137 16.4693 22.8933 16.4999C22.8468 16.5021 22.8014 16.5222 22.7181 16.5438C23.1009 16.7416 23.4475 16.916 23.7895 17.0986C25.2824 17.8956 26.7759 18.6914 28.2647 19.4961C28.5984 19.6765 28.9116 19.8925 29.2374 20.0867C29.3572 20.158 29.3598 20.2293 29.28 20.3324C28.932 20.7813 28.5852 21.231 28.2433 21.6846C28.1642 21.7897 28.0985 21.7678 28.0008 21.7124C26.8142 21.0406 25.6342 20.3565 24.4337 19.7091C23.5396 19.2267 22.6309 18.7663 21.7059 18.3439C20.4298 17.7613 19.1325 17.2228 17.8426 16.6692C17.7268 16.6194 17.5982 16.5983 17.4612 16.5925C20.0863 19.5629 23.0515 22.1684 26.1346 24.6768C25.9094 24.9798 25.6796 25.29 25.4486 25.5996C25.3075 25.7889 25.1602 25.9739 25.0253 26.1672C24.9496 26.2757 24.8928 26.2938 24.7826 26.2C23.3866 25.0114 21.9834 23.8307 20.5902 22.6387C20.2498 22.3473 19.9392 22.0224 19.6144 21.7138C19.5609 21.6631 19.5042 21.6156 19.4488 21.5664L19.4046 21.591C19.4682 21.7992 19.5301 22.0077 19.5957 22.2153C20.0373 23.6116 20.4944 25.0035 20.9158 26.4057C21.14 27.1514 21.3017 27.915 21.4955 28.6695C21.5236 28.7793 21.5041 28.8326 21.3807 28.8513C20.8121 28.9375 20.244 29.0277 19.6767 29.1207C19.5264 29.1452 19.4698 29.1026 19.4313 28.9461C19.2637 28.2635 19.0901 27.5812 18.8889 26.9074C18.4722 25.5113 18.0654 24.1113 17.5997 22.7307C17.2047 21.5606 16.7382 20.4133 16.2917 19.2603C16.1339 18.8529 15.9422 18.4577 15.7643 18.0577C15.7396 18.0019 15.7059 17.95 15.6765 17.8964C15.6569 17.8998 15.6374 17.9033 15.6178 17.9069L15.6174 17.9079Z" fill="#10551F"/>
-                              </svg>
-                            </div>
-                            <div class="content">
-                                <h4 class="title">Boosts Property Value</h4>
-                                <div class="text">It is a long established fact that a reder will be distracted by the readable</div>
-                            </div>
-                        </li>
-                         <li>
-                            <div class="icon">
-                              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.6174 17.9079C15.5927 18.2785 15.5461 18.6493 15.5475 19.02C15.553 20.6088 15.5403 22.1988 15.5969 23.7862C15.646 25.1708 15.7744 26.5531 15.8772 27.9359C15.9171 28.4722 15.9811 29.0069 16.0379 29.542C16.0496 29.6518 16.0372 29.7166 15.9003 29.7353C15.3177 29.8148 14.7362 29.902 14.1558 29.9948C14.0414 30.0131 14.0087 29.9886 13.9997 29.8778C13.8958 28.6226 13.773 27.3686 13.685 26.1124C13.6101 25.0454 13.5743 23.9756 13.5204 22.9072C13.5186 22.8714 13.5079 22.8361 13.4575 22.7892C13.2662 23.1703 13.0831 23.5557 12.8822 23.9317C12.1993 25.2103 11.5166 26.4889 10.8205 27.7604C10.5459 28.2619 10.2392 28.7468 9.93831 29.234C9.91198 29.2767 9.7937 29.3178 9.76285 29.2968C9.23731 28.9393 8.71877 28.5721 8.19919 28.2061C8.18993 28.1997 8.18705 28.1846 8.18726 28.185C10.2104 24.7646 12.0259 21.2546 13.4739 17.5707C13.4536 17.5522 13.433 17.5336 13.4126 17.5151C13.3227 17.5739 13.2213 17.6212 13.1446 17.6935C12.3992 18.3965 11.6371 19.084 10.9199 19.8136C9.19576 21.5672 7.58849 23.4222 6.02545 25.3142C5.85452 25.5209 5.67372 25.7208 5.51678 25.9372C5.41619 26.0758 5.33618 26.0993 5.19076 25.9968C4.80262 25.723 4.40522 25.4617 4.01092 25.1962C3.90005 25.1215 3.78753 25.049 3.65877 24.9643C5.1634 23.0554 6.78465 21.2502 8.39727 19.4379C6.00447 20.1655 3.65466 20.9788 1.20385 21.5264C1.14749 21.1572 1.10142 20.8276 1.04609 20.4994C0.998779 20.2186 0.942831 19.9392 0.887501 19.6597C0.871457 19.5782 0.861995 19.5255 0.974508 19.4931C2.63711 19.0141 4.29909 18.5328 5.95881 18.045C7.68867 17.5364 9.3778 16.9186 11.0291 16.2021C11.4117 16.0362 11.7961 15.8746 12.1834 15.6668C12.1096 15.6471 12.0366 15.6135 11.9619 15.61C11.2835 15.5778 10.6045 15.5192 9.92679 15.5289C8.30286 15.5521 6.6777 15.5774 5.05624 15.6598C3.59686 15.7341 2.14139 15.8824 0.684895 16.0048C0.32144 16.0354 0.316914 16.0483 0.255824 15.7077C0.16676 15.2096 0.0861293 14.7099 0.00385297 14.2105C-0.00416897 14.1622 0.00282452 14.1114 0.00282452 14.043C2.40776 13.7356 4.82442 13.6172 7.24149 13.5036L7.25054 13.4477C7.13844 13.3974 7.02305 13.3529 6.91465 13.2957C5.53632 12.5707 4.15325 11.8538 2.78376 11.1132C2.11095 10.7494 1.46364 10.3405 0.804607 9.9522C0.693534 9.88677 0.615577 9.81953 0.719863 9.68243C1.07488 9.21517 1.42476 8.74409 1.77711 8.27482C1.79213 8.25489 1.81105 8.23798 1.83203 8.21543C5.26501 10.2222 8.76258 12.0966 12.4996 13.5061C12.5129 13.492 12.5261 13.4777 12.5395 13.4636C12.384 13.2693 12.2353 13.0698 12.0721 12.882C10.9639 11.6054 9.74393 10.4362 8.47523 9.31402C8.16319 9.03801 7.86865 8.74308 7.55353 8.4707C6.70012 7.73287 5.84115 7.00108 4.98219 6.26969C4.65041 5.98704 4.30958 5.71446 3.98027 5.42939C3.94077 5.39517 3.91239 5.28605 3.93707 5.25243C4.30834 4.7439 4.68928 4.24202 5.08544 3.71537C7.01421 5.20371 8.76196 6.84707 10.6004 8.40708C10.5819 8.35071 10.563 8.29435 10.5449 8.23777C10.1958 7.14542 9.82826 6.05811 9.50286 4.95891C9.15421 3.781 8.84629 2.59161 8.51719 1.40826C8.47646 1.26211 8.49024 1.20131 8.67207 1.17635C9.22291 1.10065 9.77087 1.00261 10.3176 0.901346C10.4813 0.870947 10.5402 0.908594 10.5834 1.07166C10.9131 2.3146 11.2397 3.55874 11.5972 4.79423C12.1647 6.75587 12.8787 8.67021 13.6142 10.5761C13.8059 11.0729 14.0459 11.5519 14.2646 12.0387C14.2739 12.0594 14.2932 12.0757 14.3491 12.1464C14.3751 11.9698 14.4067 11.8452 14.4094 11.72C14.4318 10.6504 14.4723 9.58057 14.4612 8.51116C14.4501 7.43532 14.4022 6.35928 14.3409 5.28484C14.2796 4.21041 14.186 3.13759 14.0986 2.06476C14.0538 1.51597 13.9935 0.968184 13.9351 0.420398C13.9244 0.321148 13.9557 0.287729 14.0546 0.273033C14.5914 0.193512 15.1273 0.107952 15.6633 0.0227948C15.9706 -0.0259241 15.9836 -0.0194819 16.0082 0.277059C16.1596 2.09395 16.3127 3.91085 16.4581 5.72815C16.491 6.13823 16.4951 6.55053 16.5134 6.96182C16.5173 7.04678 16.5262 7.13153 16.5365 7.26219C16.7142 6.91371 16.8625 6.60952 17.0225 6.31116C17.8492 4.76987 18.6756 3.22878 19.5099 1.69152C19.6671 1.40202 19.8721 1.13749 20.0303 0.8484C20.1206 0.68352 20.198 0.69882 20.3271 0.790219C20.7153 1.06441 21.1083 1.33176 21.4992 1.60234C21.6094 1.67863 21.7186 1.75675 21.8172 1.8264C19.8092 5.26008 17.9366 8.74832 16.5864 12.5039C16.6564 12.4582 16.7356 12.422 16.7952 12.3658C17.5958 11.6101 18.4307 10.8849 19.1839 10.0863C20.416 8.77992 21.6039 7.43311 22.7921 6.0877C23.3794 5.42275 23.928 4.72478 24.4887 4.03748C24.586 3.9181 24.6485 3.88206 24.7956 3.99037C25.2907 4.35496 25.8008 4.69961 26.3228 5.0642C24.7875 6.96303 23.2342 8.81395 21.582 10.6061C21.6528 10.5924 21.726 10.5859 21.7939 10.5636C22.634 10.2884 23.4693 9.99931 24.3136 9.73779C25.0899 9.49722 25.874 9.2806 26.6573 9.06258C27.3101 8.88078 27.9671 8.71369 28.6212 8.53613C28.7382 8.50432 28.8047 8.51942 28.8267 8.65048C28.9207 9.21236 29.0169 9.77403 29.1188 10.3347C29.1437 10.4714 29.0949 10.5282 28.9612 10.561C28.4408 10.689 27.9175 10.8094 27.4049 10.963C25.8598 11.426 24.3083 11.872 22.7798 12.3837C21.2202 12.9057 19.6706 13.4612 18.1824 14.1642C18.0573 14.2234 17.9263 14.2705 17.798 14.323C17.7994 14.3423 17.8008 14.3617 17.8021 14.3812C18.19 14.413 18.5773 14.4559 18.9661 14.4748C20.5324 14.5509 22.0979 14.506 23.6624 14.4229C24.806 14.3621 25.9497 14.298 27.0919 14.2155C27.84 14.1614 28.5854 14.0716 29.3323 13.9979C29.403 13.9908 29.4744 13.9872 29.5448 13.9774C29.6474 13.9629 29.6996 13.9987 29.7163 14.1038C29.8035 14.6538 29.8971 15.203 29.9851 15.753C30.0213 15.9797 30.0117 15.9764 29.7626 15.9994C29.0608 16.0642 28.3608 16.148 27.6586 16.2049C26.6914 16.2832 25.723 16.3493 24.7544 16.4103C24.1347 16.4493 23.5137 16.4693 22.8933 16.4999C22.8468 16.5021 22.8014 16.5222 22.7181 16.5438C23.1009 16.7416 23.4475 16.916 23.7895 17.0986C25.2824 17.8956 26.7759 18.6914 28.2647 19.4961C28.5984 19.6765 28.9116 19.8925 29.2374 20.0867C29.3572 20.158 29.3598 20.2293 29.28 20.3324C28.932 20.7813 28.5852 21.231 28.2433 21.6846C28.1642 21.7897 28.0985 21.7678 28.0008 21.7124C26.8142 21.0406 25.6342 20.3565 24.4337 19.7091C23.5396 19.2267 22.6309 18.7663 21.7059 18.3439C20.4298 17.7613 19.1325 17.2228 17.8426 16.6692C17.7268 16.6194 17.5982 16.5983 17.4612 16.5925C20.0863 19.5629 23.0515 22.1684 26.1346 24.6768C25.9094 24.9798 25.6796 25.29 25.4486 25.5996C25.3075 25.7889 25.1602 25.9739 25.0253 26.1672C24.9496 26.2757 24.8928 26.2938 24.7826 26.2C23.3866 25.0114 21.9834 23.8307 20.5902 22.6387C20.2498 22.3473 19.9392 22.0224 19.6144 21.7138C19.5609 21.6631 19.5042 21.6156 19.4488 21.5664L19.4046 21.591C19.4682 21.7992 19.5301 22.0077 19.5957 22.2153C20.0373 23.6116 20.4944 25.0035 20.9158 26.4057C21.14 27.1514 21.3017 27.915 21.4955 28.6695C21.5236 28.7793 21.5041 28.8326 21.3807 28.8513C20.8121 28.9375 20.244 29.0277 19.6767 29.1207C19.5264 29.1452 19.4698 29.1026 19.4313 28.9461C19.2637 28.2635 19.0901 27.5812 18.8889 26.9074C18.4722 25.5113 18.0654 24.1113 17.5997 22.7307C17.2047 21.5606 16.7382 20.4133 16.2917 19.2603C16.1339 18.8529 15.9422 18.4577 15.7643 18.0577C15.7396 18.0019 15.7059 17.95 15.6765 17.8964C15.6569 17.8998 15.6374 17.9033 15.6178 17.9069L15.6174 17.9079Z" fill="#10551F"/>
-                              </svg>
-                            </div>
-                            <div class="content">
-                                <h4 class="title">Low Maintenance Lifestyle</h4>
-                                <div class="text">It is a long established fact that a reder will be distracted by the readable</div>
-                            </div>
-                        </li>
-                         <li>
-                            <div class="icon">
-                              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.6174 17.9079C15.5927 18.2785 15.5461 18.6493 15.5475 19.02C15.553 20.6088 15.5403 22.1988 15.5969 23.7862C15.646 25.1708 15.7744 26.5531 15.8772 27.9359C15.9171 28.4722 15.9811 29.0069 16.0379 29.542C16.0496 29.6518 16.0372 29.7166 15.9003 29.7353C15.3177 29.8148 14.7362 29.902 14.1558 29.9948C14.0414 30.0131 14.0087 29.9886 13.9997 29.8778C13.8958 28.6226 13.773 27.3686 13.685 26.1124C13.6101 25.0454 13.5743 23.9756 13.5204 22.9072C13.5186 22.8714 13.5079 22.8361 13.4575 22.7892C13.2662 23.1703 13.0831 23.5557 12.8822 23.9317C12.1993 25.2103 11.5166 26.4889 10.8205 27.7604C10.5459 28.2619 10.2392 28.7468 9.93831 29.234C9.91198 29.2767 9.7937 29.3178 9.76285 29.2968C9.23731 28.9393 8.71877 28.5721 8.19919 28.2061C8.18993 28.1997 8.18705 28.1846 8.18726 28.185C10.2104 24.7646 12.0259 21.2546 13.4739 17.5707C13.4536 17.5522 13.433 17.5336 13.4126 17.5151C13.3227 17.5739 13.2213 17.6212 13.1446 17.6935C12.3992 18.3965 11.6371 19.084 10.9199 19.8136C9.19576 21.5672 7.58849 23.4222 6.02545 25.3142C5.85452 25.5209 5.67372 25.7208 5.51678 25.9372C5.41619 26.0758 5.33618 26.0993 5.19076 25.9968C4.80262 25.723 4.40522 25.4617 4.01092 25.1962C3.90005 25.1215 3.78753 25.049 3.65877 24.9643C5.1634 23.0554 6.78465 21.2502 8.39727 19.4379C6.00447 20.1655 3.65466 20.9788 1.20385 21.5264C1.14749 21.1572 1.10142 20.8276 1.04609 20.4994C0.998779 20.2186 0.942831 19.9392 0.887501 19.6597C0.871457 19.5782 0.861995 19.5255 0.974508 19.4931C2.63711 19.0141 4.29909 18.5328 5.95881 18.045C7.68867 17.5364 9.3778 16.9186 11.0291 16.2021C11.4117 16.0362 11.7961 15.8746 12.1834 15.6668C12.1096 15.6471 12.0366 15.6135 11.9619 15.61C11.2835 15.5778 10.6045 15.5192 9.92679 15.5289C8.30286 15.5521 6.6777 15.5774 5.05624 15.6598C3.59686 15.7341 2.14139 15.8824 0.684895 16.0048C0.32144 16.0354 0.316914 16.0483 0.255824 15.7077C0.16676 15.2096 0.0861293 14.7099 0.00385297 14.2105C-0.00416897 14.1622 0.00282452 14.1114 0.00282452 14.043C2.40776 13.7356 4.82442 13.6172 7.24149 13.5036L7.25054 13.4477C7.13844 13.3974 7.02305 13.3529 6.91465 13.2957C5.53632 12.5707 4.15325 11.8538 2.78376 11.1132C2.11095 10.7494 1.46364 10.3405 0.804607 9.9522C0.693534 9.88677 0.615577 9.81953 0.719863 9.68243C1.07488 9.21517 1.42476 8.74409 1.77711 8.27482C1.79213 8.25489 1.81105 8.23798 1.83203 8.21543C5.26501 10.2222 8.76258 12.0966 12.4996 13.5061C12.5129 13.492 12.5261 13.4777 12.5395 13.4636C12.384 13.2693 12.2353 13.0698 12.0721 12.882C10.9639 11.6054 9.74393 10.4362 8.47523 9.31402C8.16319 9.03801 7.86865 8.74308 7.55353 8.4707C6.70012 7.73287 5.84115 7.00108 4.98219 6.26969C4.65041 5.98704 4.30958 5.71446 3.98027 5.42939C3.94077 5.39517 3.91239 5.28605 3.93707 5.25243C4.30834 4.7439 4.68928 4.24202 5.08544 3.71537C7.01421 5.20371 8.76196 6.84707 10.6004 8.40708C10.5819 8.35071 10.563 8.29435 10.5449 8.23777C10.1958 7.14542 9.82826 6.05811 9.50286 4.95891C9.15421 3.781 8.84629 2.59161 8.51719 1.40826C8.47646 1.26211 8.49024 1.20131 8.67207 1.17635C9.22291 1.10065 9.77087 1.00261 10.3176 0.901346C10.4813 0.870947 10.5402 0.908594 10.5834 1.07166C10.9131 2.3146 11.2397 3.55874 11.5972 4.79423C12.1647 6.75587 12.8787 8.67021 13.6142 10.5761C13.8059 11.0729 14.0459 11.5519 14.2646 12.0387C14.2739 12.0594 14.2932 12.0757 14.3491 12.1464C14.3751 11.9698 14.4067 11.8452 14.4094 11.72C14.4318 10.6504 14.4723 9.58057 14.4612 8.51116C14.4501 7.43532 14.4022 6.35928 14.3409 5.28484C14.2796 4.21041 14.186 3.13759 14.0986 2.06476C14.0538 1.51597 13.9935 0.968184 13.9351 0.420398C13.9244 0.321148 13.9557 0.287729 14.0546 0.273033C14.5914 0.193512 15.1273 0.107952 15.6633 0.0227948C15.9706 -0.0259241 15.9836 -0.0194819 16.0082 0.277059C16.1596 2.09395 16.3127 3.91085 16.4581 5.72815C16.491 6.13823 16.4951 6.55053 16.5134 6.96182C16.5173 7.04678 16.5262 7.13153 16.5365 7.26219C16.7142 6.91371 16.8625 6.60952 17.0225 6.31116C17.8492 4.76987 18.6756 3.22878 19.5099 1.69152C19.6671 1.40202 19.8721 1.13749 20.0303 0.8484C20.1206 0.68352 20.198 0.69882 20.3271 0.790219C20.7153 1.06441 21.1083 1.33176 21.4992 1.60234C21.6094 1.67863 21.7186 1.75675 21.8172 1.8264C19.8092 5.26008 17.9366 8.74832 16.5864 12.5039C16.6564 12.4582 16.7356 12.422 16.7952 12.3658C17.5958 11.6101 18.4307 10.8849 19.1839 10.0863C20.416 8.77992 21.6039 7.43311 22.7921 6.0877C23.3794 5.42275 23.928 4.72478 24.4887 4.03748C24.586 3.9181 24.6485 3.88206 24.7956 3.99037C25.2907 4.35496 25.8008 4.69961 26.3228 5.0642C24.7875 6.96303 23.2342 8.81395 21.582 10.6061C21.6528 10.5924 21.726 10.5859 21.7939 10.5636C22.634 10.2884 23.4693 9.99931 24.3136 9.73779C25.0899 9.49722 25.874 9.2806 26.6573 9.06258C27.3101 8.88078 27.9671 8.71369 28.6212 8.53613C28.7382 8.50432 28.8047 8.51942 28.8267 8.65048C28.9207 9.21236 29.0169 9.77403 29.1188 10.3347C29.1437 10.4714 29.0949 10.5282 28.9612 10.561C28.4408 10.689 27.9175 10.8094 27.4049 10.963C25.8598 11.426 24.3083 11.872 22.7798 12.3837C21.2202 12.9057 19.6706 13.4612 18.1824 14.1642C18.0573 14.2234 17.9263 14.2705 17.798 14.323C17.7994 14.3423 17.8008 14.3617 17.8021 14.3812C18.19 14.413 18.5773 14.4559 18.9661 14.4748C20.5324 14.5509 22.0979 14.506 23.6624 14.4229C24.806 14.3621 25.9497 14.298 27.0919 14.2155C27.84 14.1614 28.5854 14.0716 29.3323 13.9979C29.403 13.9908 29.4744 13.9872 29.5448 13.9774C29.6474 13.9629 29.6996 13.9987 29.7163 14.1038C29.8035 14.6538 29.8971 15.203 29.9851 15.753C30.0213 15.9797 30.0117 15.9764 29.7626 15.9994C29.0608 16.0642 28.3608 16.148 27.6586 16.2049C26.6914 16.2832 25.723 16.3493 24.7544 16.4103C24.1347 16.4493 23.5137 16.4693 22.8933 16.4999C22.8468 16.5021 22.8014 16.5222 22.7181 16.5438C23.1009 16.7416 23.4475 16.916 23.7895 17.0986C25.2824 17.8956 26.7759 18.6914 28.2647 19.4961C28.5984 19.6765 28.9116 19.8925 29.2374 20.0867C29.3572 20.158 29.3598 20.2293 29.28 20.3324C28.932 20.7813 28.5852 21.231 28.2433 21.6846C28.1642 21.7897 28.0985 21.7678 28.0008 21.7124C26.8142 21.0406 25.6342 20.3565 24.4337 19.7091C23.5396 19.2267 22.6309 18.7663 21.7059 18.3439C20.4298 17.7613 19.1325 17.2228 17.8426 16.6692C17.7268 16.6194 17.5982 16.5983 17.4612 16.5925C20.0863 19.5629 23.0515 22.1684 26.1346 24.6768C25.9094 24.9798 25.6796 25.29 25.4486 25.5996C25.3075 25.7889 25.1602 25.9739 25.0253 26.1672C24.9496 26.2757 24.8928 26.2938 24.7826 26.2C23.3866 25.0114 21.9834 23.8307 20.5902 22.6387C20.2498 22.3473 19.9392 22.0224 19.6144 21.7138C19.5609 21.6631 19.5042 21.6156 19.4488 21.5664L19.4046 21.591C19.4682 21.7992 19.5301 22.0077 19.5957 22.2153C20.0373 23.6116 20.4944 25.0035 20.9158 26.4057C21.14 27.1514 21.3017 27.915 21.4955 28.6695C21.5236 28.7793 21.5041 28.8326 21.3807 28.8513C20.8121 28.9375 20.244 29.0277 19.6767 29.1207C19.5264 29.1452 19.4698 29.1026 19.4313 28.9461C19.2637 28.2635 19.0901 27.5812 18.8889 26.9074C18.4722 25.5113 18.0654 24.1113 17.5997 22.7307C17.2047 21.5606 16.7382 20.4133 16.2917 19.2603C16.1339 18.8529 15.9422 18.4577 15.7643 18.0577C15.7396 18.0019 15.7059 17.95 15.6765 17.8964C15.6569 17.8998 15.6374 17.9033 15.6178 17.9069L15.6174 17.9079Z" fill="#10551F"/>
-                              </svg>
-
-                            </div>
-                            <div class="content">
-                                <h4 class="title">Cost-Effective Solution</h4>
-                                <div class="text">It is a long established fact that a reder will be distracted by the readable</div>
-                            </div>
-                        </li>
-                    </ul>
+                  </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Brand Section Start -->
-        <div class="brand-section section-padding pt-0">
-          <div class="container">
-              <h4 class="brand-text tx-title sec_title  tz-itm-title tz-itm-anim">
-                Trusted By Leading Brands
-              </h4>
-              <div class="swiper brand-slider wow fadeInUp">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                     <div class="brand-box-1">
-                        <span class="brand-img-1">
-                            <img src="images/resource/brand-1-1.png" alt="img">
-                        </span>
-                        <span class="brand-img-1">
-                            <img src="images/resource/brand-1-1.png" alt="img">
-                        </span>
-                      </div>
-                  </div>
-                   <div class="swiper-slide">
-                     <div class="brand-box-1">
-                        <span class="brand-img-1">
-                            <img src="images/resource/brand-1-2.png" alt="img">
-                        </span>
-                        <span class="brand-img-1">
-                            <img src="images/resource/brand-1-2.png" alt="img">
-                        </span>
-                      </div>
-                  </div>
-                   <div class="swiper-slide">
-                     <div class="brand-box-1">
-                        <span class="brand-img-1">
-                            <img src="images/resource/brand-1-3.png" alt="img">
-                        </span>
-                        <span class="brand-img-1">
-                            <img src="images/resource/brand-1-3.png" alt="img">
-                        </span>
-                      </div>
-                  </div>
-                   <div class="swiper-slide">
-                     <div class="brand-box-1">
-                        <span class="brand-img-1">
-                            <img src="images/resource/brand-1-4.png" alt="img">
-                        </span>
-                        <span class="brand-img-1">
-                            <img src="images/resource/brand-1-4.png" alt="img">
-                        </span>
-                      </div>
-                  </div>
-                   <div class="swiper-slide">
-                     <div class="brand-box-1">
-                        <span class="brand-img-1">
-                            <img src="images/resource/brand-1-5.png" alt="img">
-                        </span>
-                        <span class="brand-img-1">
-                            <img src="images/resource/brand-1-5.png" alt="img">
-                        </span>
-                      </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-
-        <!-- Pricing Section Start -->
-        <section class="pricing-section fix section-padding bg-cover" style="background-image: url('images/background/pricing-bg-1-1.jpg');">
-          <div class="object-1 float-bob-y">
-            <img src="images/icons/object-1-1.png" alt="">
-          </div>
-          <div class="object-2 float-bob-x">
-            <img src="images/icons/object-1-2.png" alt="">
-          </div>
-          <div class="frame-1 float-bob-x">
-            <img src="images/icons/frame1-1.png" alt="">
-          </div>
-          <div class="container">
-              <div class="row g-4 justify-content-center">
-                <div class="col-lg-6">
-                    <div class="sec-title text-center mb-20">
-                      <div class="sec-sub-title bg-white">
-                        <h6 class="sub-title tz-sub-tilte tz-sub-anim tx-subTitle">Our Pricing</h6>
-                      </div>
-                        <h2 class="title tx-title sec_title  tz-itm-title tz-itm-anim">
-                          Select a Plan According to
-                          Your Requirements 
-                        </h2>
-                    </div>
-                </div>
-              </div>
-              <div class="row">
-                  <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                      <div class="pricing-block-items-1">
-                          <div class="pricing-header">
-                              <div class="content">
-                                <h4 class="title">Basic Lawn Care</h4>
-                                <p>Weekly mowing & trimming</p>
-                              </div>
-                              <h2 class="pricing-title">
-                                $79 <sub>/visit</sub>
-                              </h2>
-                          </div>
-                          <div class="pricing-list-item">
-                              <ul>
-                                  <li>
-                                      <i class="fa-solid fa-circle-check"></i>
-                                      Grass Cutting
-                                  </li>
-                                  <li>
-                                      <i class="fa-solid fa-circle-check"></i>
-                                      Basic Edging
-                                  </li>
-                                  <li>
-                                      <i class="fa-solid fa-circle-check"></i>
-                                      Light Trimming
-                                  </li>
-                                  <li>
-                                      <i class="fa-solid fa-circle-check"></i>
-                                      Blowing & Cleanup
-                                  </li>
-                              </ul>
-                              <div class="line"></div>
-                              <ul>
-                                  <li>
-                                      <i class="fa-solid fa-circle-check"></i>
-                                      Grass Cutting
-                                  </li>
-                                  <li>
-                                      <i class="fa-solid fa-circle-check"></i>
-                                      Basic Edging
-                                  </li>
-                                  <li>
-                                      <i class="fa-solid fa-circle-check"></i>
-                                      Light Trimming
-                                  </li>
-                                  <li>
-                                      <i class="fa-solid fa-circle-check"></i>
-                                      Blowing & Cleanup
-                                  </li>
-                              </ul>
-                          </div>
-                          <a class="theme-btn-main" href="page-pricing.html">
-                            <span class="theme-btn-arrow-left"> <i class="fa-solid fa-arrow-right"></i> </span>
-                            <span class="theme-btn">Select Plan</span>
-                            <span class="theme-btn-arrow-right"> <i class="fa-solid fa-arrow-right"></i> </span>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                      <div class="pricing-block-items-1 active">
-                          <div class="pricing-header">
-                              <div class="content">
-                                <h4 class="title">Standard Turfing Package</h4>
-                                <p>Full design + installation</p>
-                              </div>
-                              <h2 class="pricing-title">
-                                $499 <sub>/visit</sub>
-                              </h2>
-                          </div>
-                          <div class="pricing-list-item">
-                              <ul>
-                                  <li>
-                                      <i class="fa-solid fa-circle-check"></i>
-                                      Grass Cutting
-                                  </li>
-                                  <li>
-                                      <i class="fa-solid fa-circle-check"></i>
-                                      Basic Edging
-                                  </li>
-                                  <li>
-                                      <i class="fa-solid fa-circle-check"></i>
-                                      Light Trimming
-                                  </li>
-                                  <li>
-                                      <i class="fa-solid fa-circle-check"></i>
-                                      Blowing & Cleanup
-                                  </li>
-                              </ul>
-                              <div class="line"></div>
-                              <ul>
-                                  <li>
-                                      <i class="fa-solid fa-circle-check"></i>
-                                      Grass Cutting
-                                  </li>
-                                  <li>
-                                      <i class="fa-solid fa-circle-check"></i>
-                                      Basic Edging
-                                  </li>
-                                  <li>
-                                      <i class="fa-solid fa-circle-check"></i>
-                                      Light Trimming
-                                  </li>
-                                  <li>
-                                      <i class="fa-solid fa-circle-check"></i>
-                                      Blowing & Cleanup
-                                  </li>
-                              </ul>
-                          </div>
-                          <a class="theme-btn-main" href="page-pricing.html">
-                            <span class="theme-btn-arrow-left"> <i class="fa-solid fa-arrow-right"></i> </span>
-                            <span class="theme-btn">Select Plan</span>
-                            <span class="theme-btn-arrow-right"> <i class="fa-solid fa-arrow-right"></i> </span>
-                          </a>
-                      </div>
-                  </div>
-              </div>
           </div>
         </section>
 
-        <!-- News Section Start -->
-        <section class="news-section fix section-padding">
-          <div class="container">
-              <div class="row g-4 justify-content-center">
-                <div class="col-xl-6 col-lg-8">
-                    <div class="sec-title text-center mb-20">
-                      <div class="sec-sub-title">
-                        <h6 class="sub-title tz-sub-tilte tz-sub-anim tx-subTitle">Our Blog</h6>
-                      </div>
-                        <h2 class="title tx-title sec_title  tz-itm-title tz-itm-anim">
-                        Check Out Latest News Update & Articles
-                        </h2>
-                    </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="news-block-items-1">
-                      <div class="thumb">
-                          <img src="images/resource/news-1-1.jpg" alt="">
-                          <img src="images/resource/news-1-1.jpg" alt="">
-                          <span class="date">
-                            04
-                          </span>
-                      </div>
-                      <div class="content">
-                          <h4 class="title">
-                            <a href="news-details.html">The Best Plants for Shady Areas in Your Backyard</a>
-                          </h4>
-                          <div class="text">It is a long established fact that a reader will be distracted by the readable content of a </div>
-                          <a href="news-details.html" class="link-btn">
-                              Read more <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                      </div>
-                    </div>
-                </div>
-                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="news-block-items-1">
-                      <div class="thumb">
-                          <img src="images/resource/news-1-2.jpg" alt="">
-                          <img src="images/resource/news-1-2.jpg" alt="">
-                          <span class="date">
-                            03
-                          </span>
-                      </div>
-                      <div class="content">
-                          <h4 class="title">
-                            <a href="news-details.html">Top 7 Turf Maintenance Tips for a Healthy Lawn</a>
-                          </h4>
-                          <div class="text">It is a long established fact that a reader will be distracted by the readable content of a </div>
-                          <a href="news-details.html" class="link-btn">
-                              Read more <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                      </div>
-                    </div>
-                </div>
-                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="news-block-items-1">
-                      <div class="thumb">
-                          <img src="images/resource/news-1-3.jpg" alt="">
-                          <img src="images/resource/news-1-3.jpg" alt="">
-                          <span class="date">
-                            06
-                          </span>
-                      </div>
-                      <div class="content">
-                          <h4 class="title">
-                            <a href="news-details.html">Eco-Friendly Landscaping Ideas You Can Start Today</a>
-                          </h4>
-                          <div class="text">It is a long established fact that a reader will be distracted by the readable content of a </div>
-                          <a href="news-details.html" class="link-btn">
-                              Read more <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                      </div>
-                    </div>
-                </div>
-              </div>
-          </div>
-        </section>
-
-        <!-- Cta Banner Section Start -->
-        <section class="cta-banner-section bg-cover" style="background-image: url('images/icons/line-1-1.png');">
-          <div class="container">
-              <div class="cta-banner-wrapper">
-                  <div class="content">
-                    <h3 class="title char-animation">
-                      Stay Updated With 
-                      Expert Advice
-                    </h3>
-                    <div class="text wow fadeInUp" data-wow-delay=".3s">Join our mailing list to receive professional landscaping tips and exclusive discounts</div>
-                  </div>
-                  <form action="#" class="wow fadeInUp" data-wow-delay=".5s">
-                    <input type="text" placeholder="Enter email">
-                    <button type="submit" class="theme-btn-main">
-                      <span class="theme-btn-arrow-left"> <i class="fa-solid fa-arrow-right"></i> </span>
-                      <span class="theme-btn">Subscribe</span>
-                      <span class="theme-btn-arrow-right"> <i class="fa-solid fa-arrow-right"></i> </span>
-                    </button>
-                  </form>
-              </div>
-          </div>
-        </section>
-
+        <!-- Team Section Start -->
         
 
-<!-- Team Section Start -->
-        <section class="team-section-2 section-bg fix section-padding">
-          <div class="team-shape1 d-none d-xxl-block float-bob-x">
-            <img src="images/icons/team-shape2-1.png" alt="">
-          </div>
-           <div class="team-shape2 d-none d-xxl-block">
-            <img src="images/icons/team-shape2-2.png" alt="">
-          </div>
-          <div class="container">
-              <div class="row g-4 justify-content-center">
-                <div class="col-xl-7 col-lg-8">
-                    <div class="sec-title text-center mb-20">
-                      <div class="bg-white sec-sub-title">
-                        <h6 class="sub-title tz-sub-tilte tz-sub-anim tx-subTitle">Our Team</h6>
-                      </div>
-                        <h2 class="title tx-title sec_title  tz-itm-title tz-itm-anim">
-                        The Faces Behind Our Trusted Landscaping Services
-                        </h2>
-                    </div>
-                </div>
-              </div>
-              <div class="row">
-                  <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                    <div class="team-block-items2">
-                        <div class="thumb">
-                          <img src="images/resource/team-2-1.jpg" alt="">
-                          <img src="images/resource/team-2-1.jpg" alt="">
-                        </div>
-                        <div class="team-content">
-                            <h4 class="title">
-                                <a href="page-team-details.html">James Carter</a>
-                              </h4>
-                              <div class="text">Senior Cleaning </div>
-      
-                            <div class="social-links">
-                              <a href="#"><i class="fab fa-facebook-f"></i></a>
-                              <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                              <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                            <span class="share-icon fa-solid fa-share"></span>
-                      </div>
-                  </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="team-block-items2">
-                        <div class="thumb">
-                          <img src="images/resource/team-2-2.jpg" alt="">
-                          <img src="images/resource/team-2-2.jpg" alt="">
-                        </div>
-                        <div class="team-content">
-                            <h4 class="title">
-                                <a href="page-team-details.html">James Carter</a>
-                              </h4>
-                              <div class="text">Senior Cleaning </div>
-      
-                            <div class="social-links">
-                              <a href="#"><i class="fab fa-facebook-f"></i></a>
-                              <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                              <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                            <span class="share-icon fa-solid fa-share"></span>
-                      </div>
-                  </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                    <div class="team-block-items2">
-                        <div class="thumb">
-                          <img src="images/resource/team-2-3.jpg" alt="">
-                          <img src="images/resource/team-2-3.jpg" alt="">
-                        </div>
-                        <div class="team-content">
-                            <h4 class="title">
-                                <a href="page-team-details.html">James Carter</a>
-                              </h4>
-                              <div class="text">Senior Cleaning </div>
-      
-                            <div class="social-links">
-                              <a href="#"><i class="fab fa-facebook-f"></i></a>
-                              <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                              <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                            <span class="share-icon fa-solid fa-share"></span>
-                      </div>
-                  </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                    <div class="team-block-items2">
-                        <div class="thumb">
-                          <img src="images/resource/team-2-4.jpg" alt="">
-                          <img src="images/resource/team-2-4.jpg" alt="">
-                        </div>
-                        <div class="team-content">
-                            <h4 class="title">
-                                <a href="page-team-details.html">James Carter</a>
-                              </h4>
-                              <div class="text">Senior Cleaning </div>
-      
-                            <div class="social-links">
-                              <a href="#"><i class="fab fa-facebook-f"></i></a>
-                              <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                              <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                            <span class="share-icon fa-solid fa-share"></span>
-                      </div>
-                  </div>
-                  </div>
-              </div>
-          </div>
-        </section>
-
-<!-- Contact Section Start -->
+        <!-- Contact Section Start -->
         <section class="contact-section-2 fix section-padding bg-cover" style="background-image: url(images/resource/contact2-1.jpg);">
           <div class="container">
             <div class="row g-4">
@@ -1675,15 +662,15 @@
                         <h2 class="title tx-title sec_title  tz-itm-title tz-itm-anim">Your Free Chat <br>Starts Here</h2>
                       </div>
                       <p class="contact-text">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is
+                        Flora Landscape Developers provides expert landscape design, turf installation, garden maintenance, and advanced irrigation systems tailored to your residential or commercial needs.
                       </p>
                       <div class="icon-info">
                           <div class="icon">
                               <img src="images/icons/call.svg" alt="">
                           </div>
                           <div class="info">
-                            <a href="tel:+918888276040">+629 555-0129</a>
-                            <a class="d-block" href="tel:+6295550128">+629 555-0128</a>
+                            <a href="tel:+918888276040">+91 8888276040</a>
+                            
                           </div>
                       </div>
                       <div class="icon-info mb-0">
@@ -1691,8 +678,8 @@
                               <img src="images/icons/email.svg" alt="">
                           </div>
                           <div class="info">
-                            <a href="tel:demo@example.com"><span class="__cf_email__" data-cfemail="5337363e3c13362b323e233f367d303c3e">[email&#160;protected]</span></a>
-                            <a class="d-block" href="https://html.kodesolution.com/cdn-cgi/l/email-protection#086d70696578646d486f65696164266b6765"><span class="__cf_email__" data-cfemail="2a4f524b475a464f6a4d474b434604494547">[email&#160;protected]</span></a>
+                            <a href="mailto:floralandscape.dev@gmail.com">floralandscape.dev@gmail.com</a>
+                            
                           </div>
                       </div>
                       <div class="vec-shape">
@@ -1759,7 +746,7 @@
                                 <span class="theme-btn-arrow-right"> <i class="fa-solid fa-arrow-right"></i> </span>
                               </button>
                             <div class="price-box">
-                              <h3 class="price">$250.00</h3>
+                              <h3 class="price">₹25,000</h3>
                               <h5 class="price-title">Estimated Price:</h5>
                             </div>
                           </div>
@@ -1777,54 +764,61 @@
           </div>
         </section>
 
-<!-- Footer Section Start -->
-        <footer class="footer-section">
-          <div class="footer-area">
-            <div class="footer-shape1 float-bob-y">
-              <img src="images/icons/footer-shape1-1.png" alt="">
-            </div>
-            <div class="footer-shape2 float-bob-y">
-              <img src="images/icons/footer-shape1-2.png" alt="">
-            </div>
-              <div class="container">
-                <div class="footer-widget-wrapper">
-                  <div class="row justify-content-between">
-                      <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                        <div class="footer-single-widget">
-                          <div class="widget-head widget-logo">
-                              <a href="index.html" class="footer-logo">
-                                <img src="images/logo/flora-logo.jpeg" alt="Flora Logo" style="height: 50px; width: auto; object-fit: contain;">
-                              </a>
-                          </div>
-                          <div class="footer-content">
-                              <div class="text">Established in the year 2020, Flora Landscape Developers is a top player in the category of Landscape Designing & Development in Maharashtra.</div>
-                              <a class="theme-btn-main" href="page-contact.html">
-                                <span class="theme-btn-arrow-left"> <i class="fa-solid fa-arrow-right"></i> </span>
-                                <span class="theme-btn">Get Appointment</span>
-                                <span class="theme-btn-arrow-right"> <i class="fa-solid fa-arrow-right"></i> </span>
-                              </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay=".4s">
+        <!-- News Section Start -->
+        
+
+         <!-- Footer Section Start -->
+        <footer class="footer-section-2">
+            <div class="footer-area-2">
+              <div class="frame-shape float-bob-x">
+                <img src="images/icons/frame2-1.png" alt="">
+              </div>
+              <div class="object-shape float-bob-y">
+                <img src="images/icons/object-2-1.png" alt="">
+              </div>
+                <div class="container">
+                  <div class="footer-top-wrapper wow fadeInUp" data-wow-delay=".3s">
+                    <a href="index.html" class="footer-logo">
+                      <img src="images/logo/flora-logo.png" alt="Flora Logo" style="height: 80px; width: auto; object-fit: contain;">
+                    </a>
+                    <ul>
+                      <li>
+                        <span class="week-text">Mon - Fri: </span>
+                        <span class="time-text">9.00 am - 8.00pm </span>
+                      </li>
+                      <li>
+                        <span class="week-text">Saturday:</span>
+                        <span class="time-text">10.00 am - 8.00pm </span>
+                      </li>
+                    </ul>
+                    <ul class="social-icon-list1">
+                      <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-widget-wrapper-2">
+                    <div class="row justify-content-between">
+                      <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay=".2s">
                         <div class="footer-single-widget">
                           <div class="widget-head">
-                              <h4 class="title">Company</h4>
+                            <h4 class="title">Company</h4>
                           </div>
                           <ul class="user-links">
-                              <li><a href="#">About Us</a></li>
-                              <li><a href="#">Our Mission</a></li>
-                              <li><a href="#">Our Blogs</a></li>
-                              <li><a href="#">Help Center</a></li>
-                              <li><a href="#">Contact Us </a></li>
-                            </ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Mission</a></li>
+                            <li><a href="#">Our Blogs</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact Us </a></li>
+                          </ul>
                         </div>
                       </div>
                       <div class="col-xl-1 d-none d-xl-block"></div>
-                      <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-6 wow fadeInUp" data-wow-delay=".6s">
+                      <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 wow fadeInUp" data-wow-delay=".4s">
                         <div class="footer-single-widget">
                           <div class="widget-head">
-                              <h4 class="title">Services</h4>
+                            <h4 class="title">Services</h4>
                           </div>
                           <ul class="user-links">
                               <li><a href="page-services.html">Trunkey Solution for Landscape Development</a></li>
@@ -1836,71 +830,68 @@
                         </div>
                       </div>
                       <div class="col-xl-1 d-none d-xl-block"></div>
-                       <div class="col-xl-2 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
+                      <div class="col-xl-2 col-md-4 col-sm-5 wow fadeInUp" data-wow-delay=".6s">
                         <div class="footer-single-widget">
                           <div class="widget-head">
-                              <h4 class="title">Address</h4>
+                            <h4 class="title">Contact</h4>
                           </div>
                           <div class="footer-contact">
-                            <div class="text">238, Sangali-Manerajuri Road Kumathe, Tasgaon, Maharashtra 416306</div>
-                              <div class="footer-info">
-                                <h5 class="info-title">
-                                    Phone
-                                </h5>
-                                <a href="tel:+918888276040" class="number">+91 8888276040</a>
-                                <a href="mailto:floralandscape.dev@gmail.com" class="email">floralandscape.dev@gmail.com</a>
-                              </div>
+                            <div class="footer-info">
+                              <p><a href="tel:+918888276040" class="number">+91 8888276040</a></p>
+                              <p><a href="https://html.kodesolution.com/cdn-cgi/l/email-protection#80e4e5edefc0e5f8e1edf0ece5aee3efed" class="email">floralandscape.dev@gmail.com</a></p>
+                              <p class="mb-0">Tasgaon, Maharashtra</p>
+                            </div>
                           </div>
                         </div>
                       </div>
+                      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-7 wow fadeInUp" data-wow-delay=".8s">
+                        <div class="footer-single-widget foofer-contact-form">
+                          <div class="footer-content">
+                            <h4 class="title">
+                              Subscribe to Our <span class="d-block">Newsletter</span>
+                            </h4>
+                            <div class="subscribe-form-one">
+                              <form method="post" action="#">
+                                <div class="form-group">
+                                  <input type="email" name="email" class="email" placeholder="Enter email" required="">
+                                  <button type="button" class="circle-btn">
+                                  <i class="fa-solid fa-arrow-right"></i>
+                                  </button>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                  <label class="form-check-label" for="exampleRadios2">
+                                      I agree to the privacy policy.
+                                  </label>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="footer-middle-wrapper wow fadeInUp" data-wow-delay=".3s">
-                    <ul>
-                        <li>
-                            <span class="week-text">Mon - Fri: </span>
-                            <span class="time-text">9.00 am - 8.00pm </span>
-                        </li>
-                        <li>
-                            <span class="week-text">Saturday:</span>
-                            <span class="time-text">10.00 am - 8.00pm </span>
-                        </li>
-                    </ul>
-                    <ul class="social-icon-list1">
-                        <li>
-                          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        </li>
-                        <li>
-                          <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                          <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                        </li>
-                        <li>
-                          <a href="#"><i class="fab fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div>
-              </div>
-              <div class="footer-bottom">
-                <div class="container">
-                  <div class="footer-bottom-wrapper wow fadeInUp" data-wow-delay=".3s">
-                    <p>&copy; Copyright 2026 by Flora Landscape Developers. Developed by <a href="https://rytfulmedia.in" style="color: inherit; text-decoration: underline;">rytfulmedia.in</a></p>
-                    <ul class="footer-menu">
-                      <li><a href="#">Terms & Condition</a></li>
-                      <li><a href="#"> Privacy Policy</a></li>
-                      <li><a href="#">Contact us</a></li>
-                    </ul>
+                <div class="footer-bottom">
+                  <div class="container">
+                      <div class="footer-bottom-wrapper wow fadeInUp" data-wow-delay=".3s">
+                        <p>© Copyright 2026 by Flora Landscape Developers | Developed by rytfulmedia.in</p>
+                        <ul class="footer-menu">
+                          <li><a href="#">Terms & Condition</a></li>
+                          <li><a href="#"> Privacy Policy</a></li>
+                          <li><a href="#">Contact us</a></li>
+                        </ul>
+                      </div>
                   </div>
                 </div>
-              </div>
-          </div>
+            </div>
         </footer>
-
+  
     </div>
-    </div>  
+  </div>  
 
-   </div>
+  </div>
+   
 
   <!-- End Page Wrapper -->
   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
@@ -1929,6 +920,24 @@
   <script src="js/script.js"></script>
   <script src="js/script-gsap.js"></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"88f4fa328f314d4c95a104b4a60b2313","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+
+<script>
+  $(document).ready(function() {
+    if ($('.price-range-slider').length) {
+      $('.price-range-slider').on("slide", function(event, ui) {
+        // Calculate price: e.g., 25 rupees per sq ft
+        var price = ui.value * 25;
+        $('.price').text("₹" + price.toLocaleString("en-IN"));
+      });
+      // Initial calculation
+      var initialValue = $(".price-range-slider").slider("value");
+      if(initialValue) {
+        $('.price').text("₹" + (initialValue * 25).toLocaleString("en-IN"));
+      }
+    }
+  });
+</script>
 </body>
+
 
 </html>
