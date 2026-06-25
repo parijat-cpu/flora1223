@@ -5,7 +5,7 @@
 <title>Flora Landscape Developers</title>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style.css?v=2" rel="stylesheet">
+<link href="css/style.css?v=4" rel="stylesheet">
 
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
@@ -35,53 +35,21 @@
           <!-- Main box -->
           <div class="main-box">
             <div class="logo">
-              <a href="index.html"><img src="images/logo/flora-logo.png" alt="Flora Logo" style="height: 80px; width: auto; object-fit: contain;"></a>
+              <a href="index.html"><img src="images/logo/flora-logo2.png" alt="Flora Logo" style="height: 80px; width: auto; object-fit: contain;"></a>
             </div>
             <!--Nav Box-->
             <div class="nav-outer">
               <nav class="nav main-menu">
                 <ul class="navigation">
-                  <li class="dropdown current">
+                  <li>
                     <a href="index.html">Home</a>
-                    <ul>
-                      <li><a href="index.html">Home 01</a></li>
-                      <li><a href="index-2.html">Home 02</a></li>
-                    </ul>
                   </li>
                   <li>
                     <a href="page-about.html">About</a>
                   </li>
-                  <li class="dropdown">
-                    <a href="#">Pages</a>
-                    <ul>
-                      
-                      <li class="dropdown"><a href="#">Project</a>
-                        <ul>
-                          <li><a href="page-project.html">Project List</a></li>
-                          <li><a href="page-project-details.html">Project Details</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown"><a href="#">Team</a>
-                        <ul>
-                          <li><a href="page-team.html">Team List</a></li>
-                          <li><a href="page-team-details.html">Team Details</a></li>
-                        </ul>
-                      </li>
-                      
-                       
-                      <li><a href="page-testimonial.html">Testimonials</a></li>
-                      
-                      
-                    </ul>
+                  <li>
+                    <a href="page-services.html">Services</a>
                   </li>
-                  
-                  <li class="dropdown"><a href="#">Services</a>
-                    <ul>
-                      <li><a href="page-services.html">Services List</a></li>
-                      <li><a href="page-service-details.html">Services Details</a></li>
-                    </ul>
-                  </li>
-                  
                   <li>
                     <a href="page-contact.html">Contact</a>
                   </li>
@@ -121,7 +89,7 @@
           <nav class="menu-box">
             <div class="upper-box">
               <div class="nav-logo">
-                <a href="index.html"><img src="images/logo/flora-logo.png" alt="Flora Logo" style="height: 80px; width: auto; object-fit: contain;"></a>
+                <a href="index.html"><img src="images/logo/flora-logo2.png" alt="Flora Logo" style="height: 80px; width: auto; object-fit: contain;"></a>
               </div>
               <div class="close-btn"><i class="icon fa fa-times"></i></div>
             </div>
@@ -187,7 +155,7 @@
             <div class="inner-container">
               <!--Logo-->
               <div class="logo">
-                <a href="index.html"><img src="images/logo/flora-logo.png" alt="Flora Logo" style="height: 80px; width: auto; object-fit: contain;"></a>
+                <a href="index.html"><img src="images/logo/flora-logo2.png" alt="Flora Logo" style="height: 80px; width: auto; object-fit: contain;"></a>
               </div>
 
               <!--Right Col-->
@@ -462,76 +430,107 @@
         
 
         <!-- Brand Section Start -->
-        <div class="brand-section section-padding pb-0">
+        <style>
+          .custom-marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background: #fff;
+            padding: 40px 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            white-space: nowrap;
+          }
+          .custom-marquee-content {
+            display: inline-flex;
+            animation: marquee 30s linear infinite;
+          }
+          .custom-marquee-content:hover {
+            animation-play-state: paused;
+          }
+          @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .brand-logo-item {
+            font-size: 24px;
+            font-weight: 800;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            letter-spacing: -0.5px;
+            font-family: "Outfit", sans-serif;
+            transition: transform 0.3s ease;
+            margin: 0 40px;
+            cursor: default;
+          }
+          .brand-logo-item:hover {
+            transform: scale(1.05);
+          }
+          .brand-logo-item i {
+            font-size: 28px;
+          }
+          
+          /* Colorful Branding Styles */
+          .brand-gw { color: #101010; }
+          .brand-gw i { color: #d93025; } /* Red */
+          
+          .brand-wv { color: #1a73e8; } /* Google Blue */
+          .brand-wv i { color: #1a73e8; }
+          
+          .brand-tf { color: #1e8e3e; } /* Green */
+          .brand-tf i { color: #1e8e3e; }
+          
+          .brand-sj { color: #e53935; } /* Crimson */
+          .brand-sj i { color: #fbc02d; } /* Yellow */
+          
+          .brand-bpcl { color: #fbbc04; } /* Yellow/Orange */
+          .brand-bpcl i { color: #1967d2; } /* Dark Blue */
+          
+          .brand-sabari { color: #0d652d; } /* Dark Green */
+          .brand-sabari i { color: #81c995; } /* Light Green */
+          
+          .brand-godrej { color: #000000; } 
+          .brand-godrej i { color: #d93025; }
+        </style>
+        
+        
+        <div class="brand-section pt-60 pb-30">
           <div class="container">
-            <div class="brand-text-2">
-               <h4 class="brand-title tx-title sec_title  tz-itm-title tz-itm-anim">
-                  Trusted By Leading Brands
+            <div class="brand-text-2 text-center" style="justify-content: center; margin-bottom: 15px;">
+               <h4 class="brand-title tx-title sec_title tz-itm-title tz-itm-anim" style="font-size: 32px; font-weight: 700; color: #2e3d34;">
+                  Our Clients
                 </h4>
-                <div class="line"></div>
             </div>
-             
-              <div class="swiper brand-slider wow fadeInUp">
-                <div class="swiper-wrapper">
-
-                  <div class="swiper-slide">
-                     <div class="brand-box-1" style="padding: 10px; border: 1px solid #eaeaea; border-radius: 8px; height: 120px; display: flex; align-items: center; justify-content: center; background: white; margin: 0 10px; text-align: center;">
-                        <h5 style="margin: 0; color: #2e3d34; font-weight: 600; font-size: 15px; line-height: 1.4;">St. Jude India ChildCare Centres</h5>
-                      </div>
-                  </div>
-    
-                  <div class="swiper-slide">
-                     <div class="brand-box-1" style="padding: 10px; border: 1px solid #eaeaea; border-radius: 8px; height: 120px; display: flex; align-items: center; justify-content: center; background: white; margin: 0 10px; text-align: center;">
-                        <h5 style="margin: 0; color: #2e3d34; font-weight: 600; font-size: 15px; line-height: 1.4;">BPCL Sports Club, Chembur</h5>
-                      </div>
-                  </div>
-    
-                  <div class="swiper-slide">
-                     <div class="brand-box-1" style="padding: 10px; border: 1px solid #eaeaea; border-radius: 8px; height: 120px; display: flex; align-items: center; justify-content: center; background: white; margin: 0 10px; text-align: center;">
-                        <h5 style="margin: 0; color: #2e3d34; font-weight: 600; font-size: 15px; line-height: 1.4;">BPCL Staff Quarters, Azad Nagar, Chembur</h5>
-                      </div>
-                  </div>
-    
-                  <div class="swiper-slide">
-                     <div class="brand-box-1" style="padding: 10px; border: 1px solid #eaeaea; border-radius: 8px; height: 120px; display: flex; align-items: center; justify-content: center; background: white; margin: 0 10px; text-align: center;">
-                        <h5 style="margin: 0; color: #2e3d34; font-weight: 600; font-size: 15px; line-height: 1.4;">BPCL Refinery, Mahulgaon, Chembur</h5>
-                      </div>
-                  </div>
-    
-                  <div class="swiper-slide">
-                     <div class="brand-box-1" style="padding: 10px; border: 1px solid #eaeaea; border-radius: 8px; height: 120px; display: flex; align-items: center; justify-content: center; background: white; margin: 0 10px; text-align: center;">
-                        <h5 style="margin: 0; color: #2e3d34; font-weight: 600; font-size: 15px; line-height: 1.4;">Sabari Palm View Society, Panvel</h5>
-                      </div>
-                  </div>
-    
-                  <div class="swiper-slide">
-                     <div class="brand-box-1" style="padding: 10px; border: 1px solid #eaeaea; border-radius: 8px; height: 120px; display: flex; align-items: center; justify-content: center; background: white; margin: 0 10px; text-align: center;">
-                        <h5 style="margin: 0; color: #2e3d34; font-weight: 600; font-size: 15px; line-height: 1.4;">Godrej & Boyce Mfg. Co. Ltd., Vikhroli</h5>
-                      </div>
-                  </div>
-    
-                  <div class="swiper-slide">
-                     <div class="brand-box-1" style="padding: 10px; border: 1px solid #eaeaea; border-radius: 8px; height: 120px; display: flex; align-items: center; justify-content: center; background: white; margin: 0 10px; text-align: center;">
-                        <h5 style="margin: 0; color: #2e3d34; font-weight: 600; font-size: 15px; line-height: 1.4;">Grauer & Weil (India) Ltd., Vasai</h5>
-                      </div>
-                  </div>
-    
-                  <div class="swiper-slide">
-                     <div class="brand-box-1" style="padding: 10px; border: 1px solid #eaeaea; border-radius: 8px; height: 120px; display: flex; align-items: center; justify-content: center; background: white; margin: 0 10px; text-align: center;">
-                        <h5 style="margin: 0; color: #2e3d34; font-weight: 600; font-size: 15px; line-height: 1.4;">World Vision India, Chennai</h5>
-                      </div>
-                  </div>
-    
-                  <div class="swiper-slide">
-                     <div class="brand-box-1" style="padding: 10px; border: 1px solid #eaeaea; border-radius: 8px; height: 120px; display: flex; align-items: center; justify-content: center; background: white; margin: 0 10px; text-align: center;">
-                        <h5 style="margin: 0; color: #2e3d34; font-weight: 600; font-size: 15px; line-height: 1.4;">Tapovana - The Fern, Sakleshpur</h5>
-                      </div>
-                  </div>
-    
-              </div>
-      </div>
           </div>
         </div>
+        <div class="custom-marquee-container">
+          <div class="custom-marquee-content">
+            <!-- First Set -->
+            <div class="brand-logo-item brand-gw"><i class="fas fa-building"></i> Grauer & Weil</div>
+            <div class="brand-logo-item brand-wv"><i class="fas fa-globe"></i> World Vision</div>
+            <div class="brand-logo-item brand-tf"><i class="fas fa-leaf"></i> Tapovana</div>
+            <div class="brand-logo-item brand-sj"><i class="fas fa-child"></i> St. Jude</div>
+            <div class="brand-logo-item brand-bpcl"><i class="fas fa-gas-pump"></i> BPCL Sports Club</div>
+            <div class="brand-logo-item brand-bpcl"><i class="fas fa-home"></i> BPCL Quarters</div>
+            <div class="brand-logo-item brand-bpcl"><i class="fas fa-industry"></i> BPCL Refinery</div>
+            <div class="brand-logo-item brand-sabari"><i class="fas fa-tree"></i> Sabari Palm View</div>
+            <div class="brand-logo-item brand-godrej"><i class="fas fa-city"></i> Godrej & Boyce</div>
+            
+            <!-- Duplicated Set for Infinite Loop (Translates -50%) -->
+            <div class="brand-logo-item brand-gw"><i class="fas fa-building"></i> Grauer & Weil</div>
+            <div class="brand-logo-item brand-wv"><i class="fas fa-globe"></i> World Vision</div>
+            <div class="brand-logo-item brand-tf"><i class="fas fa-leaf"></i> Tapovana</div>
+            <div class="brand-logo-item brand-sj"><i class="fas fa-child"></i> St. Jude</div>
+            <div class="brand-logo-item brand-bpcl"><i class="fas fa-gas-pump"></i> BPCL Sports Club</div>
+            <div class="brand-logo-item brand-bpcl"><i class="fas fa-home"></i> BPCL Quarters</div>
+            <div class="brand-logo-item brand-bpcl"><i class="fas fa-industry"></i> BPCL Refinery</div>
+            <div class="brand-logo-item brand-sabari"><i class="fas fa-tree"></i> Sabari Palm View</div>
+            <div class="brand-logo-item brand-godrej"><i class="fas fa-city"></i> Godrej & Boyce</div>
+          </div>
+        </div>
+        
+        
 
         <!-- Testimonial Section Start -->
         <section class="testimonial-section fix section-padding">
@@ -558,7 +557,7 @@
                                   <div class="text">Flora Landscape Developers transformed our society's garden beautifully. The turfing looks fresh, even, and very professionally done. Their team worked with care and kept us updated throughout the process. We are really happy with the final result.</div>
                                   <div class="client-info">
                                       <div class="client-img">
-                                          <img src="images/resource/flora-custom-8.jpeg" alt="" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
+                                          <img src="https://ui-avatars.com/api/?name=Amit+Sharma&background=e8f5e9&color=2e7d32&size=128&bold=true" alt="Amit Sharma" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
                                       </div>
                                       <div class="info-content">
                                         <h5 class="name">Amit Sharma</h5>
@@ -576,7 +575,7 @@
                                   <div class="text">Exceptional service! They designed a stunning landscape for our new corporate office. The irrigation system they installed is highly efficient and the plant selection perfectly suits our climate. Highly recommended.</div>
                                   <div class="client-info">
                                       <div class="client-img">
-                                          <img src="images/resource/flora-custom-8.jpeg" alt="" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
+                                          <img src="https://ui-avatars.com/api/?name=Priya+Desai&background=e8f5e9&color=2e7d32&size=128&bold=true" alt="Priya Desai" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
                                       </div>
                                       <div class="info-content">
                                         <h5 class="name">Priya Desai</h5>
@@ -594,7 +593,7 @@
                                   <div class="text">Very professional team. We hired them for a complete lawn renovation and they delivered beyond our expectations. The attention to detail and dedication of the staff is commendable.</div>
                                   <div class="client-info">
                                       <div class="client-img">
-                                          <img src="images/resource/flora-custom-8.jpeg" alt="" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
+                                          <img src="https://ui-avatars.com/api/?name=Rajesh+Kumar&background=e8f5e9&color=2e7d32&size=128&bold=true" alt="Rajesh Kumar" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
                                       </div>
                                       <div class="info-content">
                                         <h5 class="name">Rajesh Kumar</h5>
@@ -779,7 +778,7 @@
                 <div class="container">
                   <div class="footer-top-wrapper wow fadeInUp" data-wow-delay=".3s">
                     <a href="index.html" class="footer-logo">
-                      <img src="images/logo/flora-logo.png" alt="Flora Logo" style="height: 80px; width: auto; object-fit: contain;">
+                      <img src="images/logo/flora-logo2.png" alt="Flora Logo" style="height: 80px; width: auto; object-fit: contain;">
                     </a>
                     <ul>
                       <li>

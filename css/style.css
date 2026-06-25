@@ -14768,3 +14768,53 @@ Sidebar
 .map {
   height: 550px;
 }
+/* Continuous Brand Slider */
+.brand-slider .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+.brand-text-logo {
+    font-size: 20px;
+    font-weight: 800;
+    color: #8c8c8c;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 1px;
+    font-family: "Outfit", sans-serif;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+.brand-text-logo:hover {
+    color: #405244;
+}
+.brand-text-logo i {
+    font-size: 24px;
+    color: #7ab342;
+}
+
+
+/* Fix for icon shrinking in contact info boxes on mobile */
+.icon-info .icon {
+    flex-shrink: 0 !important;
+}
+
+/* Force mobile menu background to white and text to dark */
+.mobile-menu .menu-box {
+    background-color: #ffffff !important;
+}
+.mobile-menu .navigation li a {
+    color: #1e3d22 !important;
+}
+.mobile-menu .navigation li a:hover {
+    color: #7ab342 !important;
+}
+.mobile-menu .contact-info-box .title {
+    color: #1e3d22 !important;
+}
+.mobile-menu .contact-info-box a {
+    color: #405244 !important;
+}
+.mobile-menu .contact-info-box i, .mobile-menu .contact-info-box .icon {
+    color: #7ab342 !important;
+}

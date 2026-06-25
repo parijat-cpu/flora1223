@@ -327,11 +327,12 @@ var THEMEMASCOT = {};
 
    if ($('.brand-slider').length > 0) {
     const brandSlider = new Swiper(".brand-slider", {
-        spaceBetween: 0,
-        speed: 1300,
+        spaceBetween: 30,
+        speed: 4000,
         loop: true,
+        freeMode: true,
         autoplay: {
-            delay: 2000,
+            delay: 0,
             disableOnInteraction: false,
         },
         navigation: {
