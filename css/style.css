@@ -14818,3 +14818,12 @@ Sidebar
 .mobile-menu .contact-info-box i, .mobile-menu .contact-info-box .icon {
     color: #7ab342 !important;
 }
+
+
+/* Enlarge Mobile NavBar Logo */
+@media (max-width: 575px) {
+    .main-header .logo img, .sticky-header .logo img {
+        height: 105px !important;
+        max-width: 280px !important;
+    }
+}
