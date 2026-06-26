@@ -14820,20 +14820,31 @@ Sidebar
 }
 
 
-/* Enlarge Mobile NavBar Logo */
-@media (max-width: 575px) {
+/* Responsive NavBar Logo Sizes */
+/* Default (Laptop/Desktop) */
+.main-header .logo img, .sticky-header .logo img {
+    height: 80px !important;
+    max-width: 250px !important;
+    transform: none !important;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
     .main-header .logo img, .sticky-header .logo img {
-        height: 105px !important;
-        max-width: 280px !important;
+        height: 65px !important;
     }
 }
 
-
-/* Force Larger Mobile Logo */
+/* Mobile */
 @media (max-width: 767px) {
     .main-header .logo img, .sticky-header .logo img {
-        transform: scale(1.5) !important;
-        transform-origin: left center !important;
-        max-height: none !important;
+        height: 55px !important;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 575px) {
+    .main-header .logo img, .sticky-header .logo img {
+        height: 45px !important;
     }
 }
