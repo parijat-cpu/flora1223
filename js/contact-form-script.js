@@ -39,10 +39,19 @@
                     $(form).append(errorHTML);
                 }
             },
-            error: function() {
-                var errorHTML = '<div id="form-response-msg" style="margin-top: 15px; color: #dc3545; font-size: 14px; text-align: center;">Network error. Please try again later.</div>';
+            error: function(jqXHR) {
+                var errorMessage = "Network error. Please try again later.";
+                
+                // Web3Forms returns 400 for invalid access keys
+                if (jqXHR.responseJSON && jqXHR.responseJSON.message) {
+                    errorMessage = jqXHR.responseJSON.message;
+                } else if (jqXHR.status === 400 || jqXHR.status === 401) {
+                    errorMessage = "Configuration Error: Invalid Web3Forms Access Key. Please add a valid key.";
+                }
+
+                var errorHTML = '<div id="form-response-msg" style="margin-top: 15px; color: #dc3545; font-size: 14px; text-align: center; padding: 10px; background: #ffebee; border-radius: 5px;">' + errorMessage + '</div>';
                 $(form).append(errorHTML);
-            },
+            },,
             complete: function() {
                 // Reset button text
                 form_btn.html(form_btn_old_msg);
