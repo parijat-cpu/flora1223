@@ -14824,27 +14824,30 @@ Sidebar
 /* Default (Laptop/Desktop) */
 .main-header .logo img, .sticky-header .logo img {
     height: 80px !important;
-    max-width: 250px !important;
+    max-width: 300px !important;
     transform: none !important;
 }
 
 /* Tablet */
 @media (max-width: 991px) {
     .main-header .logo img, .sticky-header .logo img {
-        height: 65px !important;
+        height: 90px !important;
+        max-width: 300px !important;
     }
 }
 
 /* Mobile */
 @media (max-width: 767px) {
     .main-header .logo img, .sticky-header .logo img {
-        height: 55px !important;
+        height: 100px !important;
+        max-width: 350px !important;
     }
 }
 
-/* Small Mobile */
+/* Small Mobile (e.g. iPhone 14 Pro Max) */
 @media (max-width: 575px) {
     .main-header .logo img, .sticky-header .logo img {
-        height: 45px !important;
+        height: 115px !important;
+        max-width: 350px !important;
     }
 }
