@@ -1,7 +1,6 @@
 (function($) {
     $("#contact_form").validate({
-      submitHandler: function(form, event) {
-        event.preventDefault();
+      submitHandler: function(form) {
         
         var form_btn = $(form).find('button[type="submit"]');
         var form_btn_old_msg = form_btn.html();
