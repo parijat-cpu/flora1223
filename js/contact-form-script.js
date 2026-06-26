@@ -3,43 +3,56 @@
       submitHandler: function(form, event) {
         event.preventDefault();
         
-        var name = $(form).find('input[name="form_name"]').val();
-        var email = $(form).find('input[name="form_email"]').val();
-        var subject = $(form).find('input[name="form_subject"]').val();
-        var phone = $(form).find('input[name="form_phone"]').val();
-        var message = $(form).find('textarea[name="form_message"]').val();
-        
-        var mailtoSubject = encodeURIComponent(subject ? subject : "New Inquiry from " + name);
-        var mailtoBody = "Name: " + name + "\\n" +
-                         "Email: " + email + "\\n" +
-                         "Phone: " + phone + "\\n\\n" +
-                         "Message:\\n" + message;
-                         
-        var mailtoLink = "mailto:flora.landscapedevelopers@gmail.com?subject=" + mailtoSubject + "&body=" + encodeURIComponent(mailtoBody);
-        
         var form_btn = $(form).find('button[type="submit"]');
         var form_btn_old_msg = form_btn.html();
-        form_btn.html('<span class="btn-title">Opening Mail Client...</span>');
+        form_btn.html('<span class="btn-title">Sending...</span>');
         
-        // Remove any previous fallback message
-        $('#mailto-fallback').remove();
+        // Remove previous messages
+        $('#form-response-msg').remove();
         
-        // Bulletproof way to open mailto link
-        var a = document.createElement('a');
-        a.href = mailtoLink;
-        a.target = '_top'; // Ensure it opens in the current tab/window context
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
+        // Prepare data for Web3Forms
+        var formData = new FormData(form);
         
-        // Add a fallback message in case the user doesn't have a default mail app configured
-        var fallbackHTML = '<div id="mailto-fallback" style="margin-top: 15px; color: #1e3d22; font-size: 14px;">If your mail app did not open automatically, please email us directly at <strong>flora.landscapedevelopers@gmail.com</strong></div>';
-        $(form).append(fallbackHTML);
+        // Setup neat subject line
+        var name = $(form).find('input[name="form_name"]').val();
+        formData.append("subject", "New Inquiry from " + name);
         
-        setTimeout(function() {
-            form_btn.html(form_btn_old_msg);
-            $(form).find('.form-control').val('');
-        }, 3000);
+        // Required for Web3Forms to set the Reply-To header correctly
+        var email = $(form).find('input[name="form_email"]').val();
+        formData.append("email", email);
+        
+        // Web3Forms AJAX Submission
+        $.ajax({
+            url: "https://api.web3forms.com/submit",
+            method: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function(response) {
+                if (response.success) {
+                    var successHTML = '<div id="form-response-msg" style="margin-top: 15px; color: #28a745; font-size: 16px; font-weight: bold; text-align: center; padding: 10px; background: #e8f5e9; border-radius: 5px;">Your query has been received! We will contact you soon.</div>';
+                    $(form).append(successHTML);
+                    // Clear the form
+                    $(form).find('.form-control').val('');
+                } else {
+                    var errorHTML = '<div id="form-response-msg" style="margin-top: 15px; color: #dc3545; font-size: 14px; text-align: center;">Something went wrong! Please check your access key or try again.</div>';
+                    $(form).append(errorHTML);
+                }
+            },
+            error: function() {
+                var errorHTML = '<div id="form-response-msg" style="margin-top: 15px; color: #dc3545; font-size: 14px; text-align: center;">Network error. Please try again later.</div>';
+                $(form).append(errorHTML);
+            },
+            complete: function() {
+                // Reset button text
+                form_btn.html(form_btn_old_msg);
+                
+                // Hide success message after 6 seconds
+                setTimeout(function() {
+                    $('#form-response-msg').fadeOut('slow', function() { $(this).remove(); });
+                }, 6000);
+            }
+        });
       }
     });
 })(jQuery);
