@@ -23,7 +23,7 @@
         
         // Web3Forms AJAX Submission
         $.ajax({
-            url: "https://api.web3forms.com/submit",
+            url: "https://formsubmit.co/ajax/flora.landscapedevelopers@gmail.com",
             method: "POST",
             data: formData,
             processData: false,
