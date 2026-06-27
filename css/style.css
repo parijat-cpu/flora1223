@@ -14850,3 +14850,20 @@ Sidebar
         transform: scale(1.55) !important;
     }
 }
+
+/* Client Card Hover Effects */
+.client-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+.client-card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12) !important;
+    border-top: 4px solid #1e3d22 !important;
+}
+.client-card i {
+    transition: all 0.3s ease;
+}
+.client-card:hover i {
+    transform: scale(1.3);
+    color: #1e3d22 !important;
+}
